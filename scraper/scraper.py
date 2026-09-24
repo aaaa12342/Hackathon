@@ -102,17 +102,31 @@ def parse_date(v):
 
 
 def is_recent(e):
-    """结束/截止日期在 30 天前之前的活动不再保留"""
-    for key in ('end', 'reg_deadline'):
+    """结束/截止/开始日期过老的活动不再保留"""
+    dd = None
+    for key in ('end', 'reg_deadline', 'start'):
         v = e.get(key) or ''
-        if v:
-            try:
-                d = datetime.strptime(v, '%Y-%m-%d').date()
-                if d < TODAY - timedelta(days=30):
-                    return False
-            except ValueError:
-                pass
+        if not v:
+            continue
+        try:
+            d = datetime.strptime(v, '%Y-%m-%d').date()
+        except ValueError:
+            continue
+        if key == 'start':
+            dd = d  # 开始日期仅在有截止/结束信息时才允许久远（长周期活动）
+            continue
+        if d < TODAY - timedelta(days=30):
+            return False
+    # 单日活动：开始超过 30 天且无截止/结束信息，视为过期
+    if dd and dd < TODAY - timedelta(days=30) and not (e.get('end') or e.get('reg_deadline')):
+        return False
     return True
+
+
+def _title_year(title):
+    """从标题中提取年份（如 '2014中日黑客马拉松' -> 2014）"""
+    m = re.search(r'((?:19|20)\d{2})年?', title)
+    return int(m.group(1)) if m else None
 
 
 def _is_hackathon(title):
@@ -202,6 +216,11 @@ def fetch_huodongxing():
             title = tm.group(1).strip() if tm else ''
             if link in seen or not title:
                 continue
+            # 活动行搜索会混入历史活动（页面只显示月日不带年份），
+            # 用标题中的年份过滤：只保留今年/明年，2014、2024 等老活动丢弃
+            ty = _title_year(title)
+            if ty is not None and not (TODAY.year <= ty <= TODAY.year + 1):
+                continue
             seen.add(link)
             chunk = html[m.end():m.end() + 3000]
             cm = re.search(r'class="item-dress-pp"[^>]*>\s*([^<]{1,20}?)\s*<', chunk)
@@ -210,10 +229,10 @@ def fetch_huodongxing():
             start = ''
             if dm:
                 mon, day = int(dm.group(1)), int(dm.group(2))
-                year = TODAY.year
+                year = ty or TODAY.year
                 try:
                     d0 = datetime(year, mon, day).date()
-                    if d0 < TODAY - timedelta(days=45):
+                    if not ty and d0 < TODAY - timedelta(days=45):
                         year += 1
                     start = '%04d-%02d-%02d' % (year, mon, day)
                 except ValueError:

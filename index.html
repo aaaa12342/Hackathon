@@ -146,21 +146,36 @@ body {
   var RANK = { closing: 0, open: 1, ongoing: 2, todo: 3, done: 4 };
   var LABEL = { open: '报名中', closing: '即将截止', ongoing: '进行中', todo: '待开始', done: '已结束' };
 
+  function dayNum(str) {
+    if (!str) return null;
+    var t = Date.parse(str + 'T00:00:00+08:00');
+    return isNaN(t) ? null : Math.round(t / 86400000);
+  }
+
   // ---- 渲染 ----
   function visible() {
     return ALL.filter(function (e) { return state.tag === '全部' || (e.tags || []).indexOf(state.tag) >= 0; });
   }
   function sorted(list) {
     var arr = list.slice();
+    var today = dayNum(new Date().toISOString().slice(0, 10));
     var cityBoost = function (e) {
       if (!state.city) return 1;
       if (e.city === state.city) return 0;
       if (e.online) return 1;
       return 2;
     };
-    if (state.sort === 'smart') arr.sort(function (a, b) { return cityBoost(a) - cityBoost(b) || RANK[status(a)] - RANK[status(b)] || (a.start || '9999').localeCompare(b.start || '9999'); });
-    if (state.sort === 'time') arr.sort(function (a, b) { return cityBoost(a) - cityBoost(b) || (a.start || '9999').localeCompare(b.start || '9999'); });
-    if (state.sort === 'ddl') arr.sort(function (a, b) { return cityBoost(a) - cityBoost(b) || (a.reg_deadline || '9999').localeCompare(b.reg_deadline || '9999'); });
+    // 报名中/即将截止的活动按报名截止日排序（最紧急在前），其余按开始日期最近的在前
+    var smartKey = function (e) {
+      var st = status(e);
+      var ddl = dayNum(e.reg_deadline);
+      if ((st === 'open' || st === 'closing') && ddl !== null) return ddl;
+      var s = dayNum(e.start);
+      return s !== null ? -s : -1e9;
+    };
+    if (state.sort === 'smart') arr.sort(function (a, b) { return cityBoost(a) - cityBoost(b) || RANK[status(a)] - RANK[status(b)] || smartKey(a) - smartKey(b); });
+    if (state.sort === 'time') arr.sort(function (a, b) { return cityBoost(a) - cityBoost(b) || Math.abs((dayNum(a.start) === null ? 1e9 : dayNum(a.start) - today)) - Math.abs((dayNum(b.start) === null ? 1e9 : dayNum(b.start) - today)); });
+    if (state.sort === 'ddl') arr.sort(function (a, b) { return cityBoost(a) - cityBoost(b) || (dayNum(a.reg_deadline) === null ? 1e9 : dayNum(a.reg_deadline)) - (dayNum(b.reg_deadline) === null ? 1e9 : dayNum(b.reg_deadline)); });
     if (state.sort === 'prize') arr.sort(function (a, b) { return cityBoost(a) - cityBoost(b) || (b.prize || 0) - (a.prize || 0); });
     return arr;
   }
@@ -173,7 +188,9 @@ body {
     var list = sorted(visible()), html = '';
     list.forEach(function (e) {
       var st = status(e);
-      var md = (e.start || '').split('-');
+      // 无开始日期时用报名截止日展示，避免日期块显示 "?"
+      var dateSrc = e.start || e.reg_deadline || '';
+      var md = dateSrc.split('-');
       var badge = '<span class="badge ' + st + '">' + LABEL[st] + '</span>';
       var ddlText = e.reg_deadline
         ? (st === 'done' ? '已结束' : (st === 'closing' ? '<span class="ddl-hot">报名截止 ' + e.reg_deadline + ' ⚠</span>' : '报名截止 ' + e.reg_deadline))
@@ -182,7 +199,7 @@ body {
       if (e.online) chips += '<span class="chip onl">线上</span>';
       var prize = fmtPrize(e);
       html += '<div class="row' + (st === 'done' ? ' dim' : '') + '">'
-        + '<div class="date"><div class="m">' + (md[1] ? +md[1] + '月' : '?') + '</div><div class="d">' + (md[2] ? +md[2] : '?') + '</div></div>'
+        + '<div class="date"><div class="m">' + (md[1] ? +md[1] + '月' : '待定') + '</div><div class="d">' + (md[2] ? +md[2] : '—') + '</div></div>'
         + '<div class="main"><div class="name"><span class="n">' + e.name + '</span>' + badge + '</div>'
         + '<div class="meta">'
         + '<span>' + e.city + '</span>'
