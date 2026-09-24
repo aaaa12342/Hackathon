@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-24 13:04",
+  "updated_at": "2026-09-24 13:29",
   "counts": {
-    "total": 97,
-    "scraped": 94,
+    "total": 72,
+    "scraped": 68,
     "manual": 6
   },
   "errors": [],
@@ -181,26 +181,6 @@
       "source": "ai-pick"
     },
     {
-      "id": "aipick-f00ae63868",
-      "name": "WEEX AI Wars II: Rise of Intelligence — $200K USDT AI交易竞赛",
-      "org": "WEEX",
-      "tags": [
-        "AI",
-        "Web3"
-      ],
-      "city": "全球",
-      "online": true,
-      "venue": "",
-      "start": "2026-07-13",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "Up to $200K USDT event rewards + 100M LLM tokens for AI strategy builders. DoraH",
-      "url": "https://dorahacks.io/hackathon/weex-ai-wars2/detail",
-      "source": "ai-pick"
-    },
-    {
       "id": "aipick-ec36d6d047",
       "name": "BLI Legal Tech Hackathon 2 — $50K+ Bounties & Legal Tech Innovation",
       "org": "Blockchain Legal Institute",
@@ -274,25 +254,6 @@
       "prize": 0,
       "prize_text": "$10,000 奖金池 + 最有价值反馈奖；新平台早期塑造机会",
       "url": "https://call-e.devpost.com/",
-      "source": "ai-pick"
-    },
-    {
-      "id": "aipick-a0cbb4d274",
-      "name": "The Rise of AI Agents Hackathon — $60K+ 全球AI Agent (Dubai AI Week)",
-      "org": "lablab.ai + Dubai AI Week",
-      "tags": [
-        "AI"
-      ],
-      "city": "全球",
-      "online": true,
-      "venue": "",
-      "start": "2026-08-04",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "$60,000+ prize pool。线上全球 Build Phase + Dubai AI Week 线下决赛（邀请制，不含差旅）。Fall 2026 日期",
-      "url": "https://lablab.ai/ai-hackathons/ai-agents-ai-week-hackathon",
       "source": "ai-pick"
     },
     {
@@ -601,25 +562,6 @@
       "source": "ai-pick"
     },
     {
-      "id": "hdx-3f16927d1d",
-      "name": "以太行星黑客松",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "深圳",
-      "online": false,
-      "venue": "",
-      "start": "2026-08-24",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/9504497722600",
-      "source": "huodongxing"
-    },
-    {
       "id": "aipick-b656475b46",
       "name": "SheNicest: 2026【烈变】夏季千人黑客松",
       "org": "SheNicest瓶子",
@@ -925,6 +867,25 @@
       "source": "ai-pick"
     },
     {
+      "id": "hdx-56e8c43b92",
+      "name": "PingWest品玩 内容产品黑客马拉松开放报名！",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "北京",
+      "online": false,
+      "venue": "",
+      "start": "2026-09-23",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/5353277899300",
+      "source": "huodongxing"
+    },
+    {
       "id": "hdx-cd9aa42d26",
       "name": "四川文旅「百县千剧」x目音Musein黑客松 9月24日",
       "org": "",
@@ -979,25 +940,6 @@
       "prize": 0,
       "prize_text": "",
       "url": "https://www.huodongxing.com/event/5878649799600",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-0976673e8c",
-      "name": "2014中日黑客马拉松",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "上海",
-      "online": false,
-      "venue": "",
-      "start": "2026-10-10",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/5247884385600",
       "source": "huodongxing"
     },
     {
@@ -1058,25 +1000,6 @@
       "source": "huodongxing"
     },
     {
-      "id": "hdx-10d7e23ac6",
-      "name": "Beijing Cleantech Hackathon 北京清洁技术黑客马拉松",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "北京",
-      "online": false,
-      "venue": "",
-      "start": "2026-10-20",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/4457276048400",
-      "source": "huodongxing"
-    },
-    {
       "id": "manual-cathay-2026",
       "name": "Cathay Hackathon 2026（国泰航空黑客松）",
       "org": "国泰航空 Cathay Pacific",
@@ -1134,6 +1057,25 @@
       "source": "huodongxing"
     },
     {
+      "id": "hdx-d137b66da8",
+      "name": "36小时不断电黑客马拉松",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "长沙",
+      "online": false,
+      "venue": "",
+      "start": "2026-12-05",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/6310125324800",
+      "source": "huodongxing"
+    },
+    {
       "id": "hdx-2e724a0746",
       "name": "长沙区块链黑客马拉松",
       "org": "",
@@ -1169,424 +1111,6 @@
       "prize": 0,
       "prize_text": "",
       "url": "https://www.huodongxing.com/event/4465637169100",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-30016051d7",
-      "name": "2015沪港黑客马拉松",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "上海",
-      "online": false,
-      "venue": "",
-      "start": "2027-03-27",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/9271396760800",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-9d616f232e",
-      "name": "黑客松路演观众报名",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "北京",
-      "online": false,
-      "venue": "",
-      "start": "2027-04-05",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/4802288419100",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-a5de762227",
-      "name": "中关村创坛 | Uowai黑客松",
-      "org": "",
-      "tags": [
-        "AI"
-      ],
-      "city": "线上活动",
-      "online": true,
-      "venue": "",
-      "start": "2027-04-06",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/2853987905200",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-2bb414e8ac",
-      "name": "Ubuntu手机黑客松 - Celebrate Ubuntu",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "上海",
-      "online": false,
-      "venue": "",
-      "start": "2027-04-09",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/7325548045000",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-a83020c0e4",
-      "name": "区块链黑客马拉松——HackSthTogether No.2",
-      "org": "",
-      "tags": [
-        "Web3"
-      ],
-      "city": "上海",
-      "online": false,
-      "venue": "",
-      "start": "2027-04-09",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/1434304588300",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-3dcad1fc55",
-      "name": "HELLO SDK — 神策2019 SDK黑客松",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "北京",
-      "online": false,
-      "venue": "",
-      "start": "2027-05-11",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/7491564144600",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-2ff2f941e9",
-      "name": "黑客马拉松挑战赛－大连站",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "大连",
-      "online": false,
-      "venue": "",
-      "start": "2027-05-14",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/9646047460500",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-8ceedec044",
-      "name": "【AKHacks】区块链 夏季Hackathon黑客马拉松",
-      "org": "",
-      "tags": [
-        "Web3"
-      ],
-      "city": "北京",
-      "online": false,
-      "venue": "",
-      "start": "2027-05-19",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/2439411387100",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-d4d25c2546",
-      "name": "SegmentFault 区块链黑客马拉松——SegmentFault Hackathon 2018 杭州",
-      "org": "",
-      "tags": [
-        "Web3"
-      ],
-      "city": "杭州",
-      "online": false,
-      "venue": "",
-      "start": "2027-06-02",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/5436426698600",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-33fc91ef9b",
-      "name": "黑客松 Build For LOVE",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "北京",
-      "online": false,
-      "venue": "",
-      "start": "2027-06-20",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/8865727986900",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-7b96c30eea",
-      "name": "AngelHack天使黑客全球黑客马拉松2018深圳站",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "深圳",
-      "online": false,
-      "venue": "",
-      "start": "2027-06-23",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/5443085388200",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-d1674762f4",
-      "name": "SegmentFault黑客马拉松2014北京站",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "北京",
-      "online": false,
-      "venue": "",
-      "start": "2027-06-28",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/9234662660200",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-500ad48c3d",
-      "name": "AngelHack全球黑客马拉松系列 - 上海站",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "上海",
-      "online": false,
-      "venue": "",
-      "start": "2027-06-30",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/7445258889500",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-750667e24b",
-      "name": "极速产品黑客松",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "北京",
-      "online": false,
-      "venue": "",
-      "start": "2027-07-01",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/9393183279300",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-3a5b031af2",
-      "name": "奥林匹斯青少年黑客松",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "北京",
-      "online": false,
-      "venue": "",
-      "start": "2027-07-04",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/2867809935600",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-cc0470f28a",
-      "name": "资深黑客松参赛者袁老师分享：AI黑客松参赛经验",
-      "org": "",
-      "tags": [
-        "AI"
-      ],
-      "city": "线上活动",
-      "online": true,
-      "venue": "",
-      "start": "2027-07-11",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/5867893083600",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-52a240eaf8",
-      "name": "XR 黑客马拉松 2025 广州站",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "广州",
-      "online": false,
-      "venue": "",
-      "start": "2027-07-18",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/5816018674100",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-b5454cc980",
-      "name": "XR 黑客马拉松 2025 上海站",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "上海",
-      "online": false,
-      "venue": "",
-      "start": "2027-07-18",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/8816015704500",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-4a604c15b6",
-      "name": "XR 黑客马拉松 2025 北京站",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "北京",
-      "online": false,
-      "venue": "",
-      "start": "2027-07-18",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/5815936698700",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-abcd636e2a",
-      "name": "2015中美黑客马拉松",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "上海",
-      "online": false,
-      "venue": "",
-      "start": "2027-07-24",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/7288928356700",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-8c632a0ae1",
-      "name": "奥林匹斯杯少年黑客松",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "北京",
-      "online": false,
-      "venue": "",
-      "start": "2027-08-01",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/8870740343700",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-5c421c173a",
-      "name": "杭州！Monad Blitz 黑客松 Demo Day",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "杭州",
-      "online": false,
-      "venue": "",
-      "start": "2027-08-02",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/7817163073000",
       "source": "huodongxing"
     },
     {

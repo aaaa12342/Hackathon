@@ -237,6 +237,12 @@ def fetch_huodongxing():
                     start = '%04d-%02d-%02d' % (year, mon, day)
                 except ValueError:
                     pass
+            # 标题无年份且推断日期距今超过 120 天的，视为历史活动丢弃
+            # （老活动的"MM月DD日"会被推到明年，正常黑客松很少提前 4 个月以上售票）
+            if start and ty is None:
+                d1 = datetime.strptime(start, '%Y-%m-%d').date()
+                if d1 > TODAY + timedelta(days=120):
+                    continue
             out.append({
                 'id': _make_id('hdx', link),
                 'name': title,

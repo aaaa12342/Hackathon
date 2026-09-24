@@ -191,6 +191,11 @@ body {
       // 无开始日期时用报名截止日展示，避免日期块显示 "?"
       var dateSrc = e.start || e.reg_deadline || '';
       var md = dateSrc.split('-');
+      // 非今年活动在月份旁标注年份，便于识别跨年活动
+      var mLabel = md[1] ? (+md[1] + '月') : '待定';
+      if (md[0] && +md[0] !== new Date().getFullYear()) {
+        mLabel = ("'" + md[0].slice(2)) + '/' + mLabel;
+      }
       var badge = '<span class="badge ' + st + '">' + LABEL[st] + '</span>';
       var ddlText = e.reg_deadline
         ? (st === 'done' ? '已结束' : (st === 'closing' ? '<span class="ddl-hot">报名截止 ' + e.reg_deadline + ' ⚠</span>' : '报名截止 ' + e.reg_deadline))
@@ -199,7 +204,7 @@ body {
       if (e.online) chips += '<span class="chip onl">线上</span>';
       var prize = fmtPrize(e);
       html += '<div class="row' + (st === 'done' ? ' dim' : '') + '">'
-        + '<div class="date"><div class="m">' + (md[1] ? +md[1] + '月' : '待定') + '</div><div class="d">' + (md[2] ? +md[2] : '—') + '</div></div>'
+        + '<div class="date"><div class="m">' + mLabel + '</div><div class="d">' + (md[2] ? +md[2] : '—') + '</div></div>'
         + '<div class="main"><div class="name"><span class="n">' + e.name + '</span>' + badge + '</div>'
         + '<div class="meta">'
         + '<span>' + e.city + '</span>'
