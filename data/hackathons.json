@@ -1,12 +1,31 @@
 {
-  "updated_at": "2026-09-24 13:29",
+  "updated_at": "2026-09-24 16:12",
   "counts": {
-    "total": 72,
-    "scraped": 68,
+    "total": 68,
+    "scraped": 64,
     "manual": 6
   },
   "errors": [],
   "events": [
+    {
+      "id": "saikr-ab502514e9",
+      "name": "X-GAME 2026智能新源汽车大数据竞赛",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "线上",
+      "online": true,
+      "venue": "",
+      "start": "2026-04-29",
+      "end": "2026-10-30",
+      "reg_deadline": "2026-10-09",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://m.saikr.com/vse/labsshevdccom/xgame/2026",
+      "source": "saikr"
+    },
     {
       "id": "aipick-c2c2075fb7",
       "name": "USAII Global AI Hackathon 2026",
@@ -581,25 +600,6 @@
       "source": "ai-pick"
     },
     {
-      "id": "hdx-57a9490f7e",
-      "name": "【黑客马拉松】中国旅游极客开发大赛",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "杭州",
-      "online": false,
-      "venue": "",
-      "start": "2026-08-29",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/2236541491400",
-      "source": "huodongxing"
-    },
-    {
       "id": "manual-xagent-mcp-2026",
       "name": "X-Agent AI MCP Hackathon 2026",
       "org": "X-Agent（OlaXBT 支持）",
@@ -637,25 +637,6 @@
       "prize_text": "高考结束，新世界向你打开。未央黑客松带你走过三阶段——一周 AI 科普教学、五天开发马拉松、开学路演，打开三扇门：认识 AI、做出一个真东西、遇见一群同类。你不只是大一新生。",
       "url": "https://watcha.cn/activities",
       "source": "ai-pick"
-    },
-    {
-      "id": "hdx-af4370bc56",
-      "name": "产品黑客松",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "北京",
-      "online": false,
-      "venue": "",
-      "start": "2026-09-02",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/1398099607800",
-      "source": "huodongxing"
     },
     {
       "id": "aipick-e9dd901cae",
@@ -753,44 +734,6 @@
       "source": "huodongxing"
     },
     {
-      "id": "hdx-5bd6d06a77",
-      "name": "ArcBlock 黑客马拉松 | 北京",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "北京",
-      "online": false,
-      "venue": "",
-      "start": "2026-09-15",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/8456393424200",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-dafdf4b718",
-      "name": "社会创新黑客松",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "深圳",
-      "online": false,
-      "venue": "",
-      "start": "2026-09-21",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/3825644654200",
-      "source": "huodongxing"
-    },
-    {
       "id": "sf-1160000048311180",
       "name": "2026脑启社区第三届类脑智能创新大赛",
       "org": "",
@@ -867,23 +810,23 @@
       "source": "ai-pick"
     },
     {
-      "id": "hdx-56e8c43b92",
-      "name": "PingWest品玩 内容产品黑客马拉松开放报名！",
+      "id": "saikr-62ed679f97",
+      "name": "【立即报名！正在考试！】AI大模型创新应用挑战赛道",
       "org": "",
       "tags": [
-        "综合"
+        "AI"
       ],
-      "city": "北京",
-      "online": false,
+      "city": "线上",
+      "online": true,
       "venue": "",
       "start": "2026-09-23",
-      "end": "",
-      "reg_deadline": "",
+      "end": "2026-09-24",
+      "reg_deadline": "2026-09-24",
       "fee": "",
       "prize": 0,
       "prize_text": "",
-      "url": "https://www.huodongxing.com/event/5353277899300",
-      "source": "huodongxing"
+      "url": "https://m.saikr.com/vse/CLAIBM2026WN",
+      "source": "saikr"
     },
     {
       "id": "hdx-cd9aa42d26",
@@ -905,23 +848,23 @@
       "source": "huodongxing"
     },
     {
-      "id": "hdx-98ec82fed1",
-      "name": "Innovation for Tomorrow——黑客松应用",
+      "id": "saikr-2431324067",
+      "name": "【九月底可领证书】2026年第四届大学生信息系统创新大赛--办公软件知识巅峰赛",
       "org": "",
       "tags": [
         "综合"
       ],
-      "city": "北京",
-      "online": false,
+      "city": "线上",
+      "online": true,
       "venue": "",
       "start": "2026-09-25",
-      "end": "",
-      "reg_deadline": "",
+      "end": "2026-09-27",
+      "reg_deadline": "2026-09-27",
       "fee": "",
       "prize": 0,
       "prize_text": "",
-      "url": "https://www.huodongxing.com/event/7774265962000",
-      "source": "huodongxing"
+      "url": "https://m.saikr.com/vse/OFFICE202601",
+      "source": "saikr"
     },
     {
       "id": "hdx-76bc0e17f1",
@@ -943,23 +886,23 @@
       "source": "huodongxing"
     },
     {
-      "id": "hdx-4de4d81fbd",
-      "name": "【黑客马拉松】革新创客社群 Hack the Community HACKATHON",
+      "id": "saikr-a432dce1ce",
+      "name": "2026年高校大学生“工创杯”人工智能知识大赛",
       "org": "",
       "tags": [
-        "综合"
+        "AI"
       ],
-      "city": "北京",
-      "online": false,
+      "city": "线上",
+      "online": true,
       "venue": "",
-      "start": "2026-10-13",
-      "end": "",
-      "reg_deadline": "",
+      "start": "2026-10-11",
+      "end": "2026-10-11",
+      "reg_deadline": "2026-10-11",
       "fee": "",
       "prize": 0,
       "prize_text": "",
-      "url": "https://www.huodongxing.com/event/8457158176911",
-      "source": "huodongxing"
+      "url": "https://m.saikr.com/vse/2026RGZN",
+      "source": "saikr"
     },
     {
       "id": "manual-laisen-horizon-2026",
@@ -981,23 +924,80 @@
       "source": "manual"
     },
     {
-      "id": "hdx-3278097f8e",
-      "name": "Sora 2 AI视频迷你黑客松",
+      "id": "saikr-01ceae1b2d",
+      "name": "2026华智·高校大学生人工智能大赛",
       "org": "",
       "tags": [
         "AI"
       ],
-      "city": "北京",
-      "online": false,
+      "city": "线上",
+      "online": true,
       "venue": "",
-      "start": "2026-10-19",
-      "end": "",
-      "reg_deadline": "",
+      "start": "2026-10-18",
+      "end": "2026-10-18",
+      "reg_deadline": "2026-10-18",
       "fee": "",
       "prize": 0,
       "prize_text": "",
-      "url": "https://www.huodongxing.com/event/7830677139700",
-      "source": "huodongxing"
+      "url": "https://m.saikr.com/vse/HZRGZN",
+      "source": "saikr"
+    },
+    {
+      "id": "saikr-0617674185",
+      "name": "2026全国大学生机器人与算法大赛-知识竞答赛道",
+      "org": "",
+      "tags": [
+        "硬件"
+      ],
+      "city": "线上",
+      "online": true,
+      "venue": "",
+      "start": "2026-10-18",
+      "end": "2026-10-18",
+      "reg_deadline": "2026-10-18",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://m.saikr.com/vse/59954",
+      "source": "saikr"
+    },
+    {
+      "id": "saikr-24fdc37bc5",
+      "name": "2026年第七届MathorCup数学应用挑战赛——大数据竞赛",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "线上",
+      "online": true,
+      "venue": "",
+      "start": "2026-10-23",
+      "end": "2026-10-30",
+      "reg_deadline": "2026-10-23",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://m.saikr.com/vse/bigdata2026",
+      "source": "saikr"
+    },
+    {
+      "id": "saikr-11bc89952c",
+      "name": "2026全国大学生机器人与算法大赛-模拟仿真赛道",
+      "org": "",
+      "tags": [
+        "硬件"
+      ],
+      "city": "线上",
+      "online": true,
+      "venue": "",
+      "start": "2026-11-14",
+      "end": "2026-11-14",
+      "reg_deadline": "2026-11-14",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://m.saikr.com/vse/Robot/arborseek/26",
+      "source": "saikr"
     },
     {
       "id": "manual-cathay-2026",
@@ -1017,101 +1017,6 @@
       "prize_text": "商务舱机票 + 最高50万港元创意基金",
       "url": "https://hackathon.cathaypacific.com/index.html",
       "source": "manual"
-    },
-    {
-      "id": "hdx-b584f3a61e",
-      "name": "牛津计划&#183;Docker黑客松马拉松中场充电站",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "北京",
-      "online": false,
-      "venue": "",
-      "start": "2026-11-22",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/9308149000700",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-1179e57d1b",
-      "name": "PatSnap第二届黑客马拉松",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "苏州",
-      "online": false,
-      "venue": "",
-      "start": "2026-11-22",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/7252800989500",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-d137b66da8",
-      "name": "36小时不断电黑客马拉松",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "长沙",
-      "online": false,
-      "venue": "",
-      "start": "2026-12-05",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/6310125324800",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-2e724a0746",
-      "name": "长沙区块链黑客马拉松",
-      "org": "",
-      "tags": [
-        "Web3"
-      ],
-      "city": "长沙",
-      "online": false,
-      "venue": "",
-      "start": "2026-12-12",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/4574802703600",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-a8e1799d46",
-      "name": "微信小程序黑客马拉松",
-      "org": "",
-      "tags": [
-        "应用"
-      ],
-      "city": "北京",
-      "online": false,
-      "venue": "",
-      "start": "2026-12-15",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/4465637169100",
-      "source": "huodongxing"
     },
     {
       "id": "aipick-caf1427d1e",
@@ -1379,6 +1284,26 @@
       "prize_text": "",
       "url": "http://8.160.176.218/apply?sessionid=#story",
       "source": "modelscope"
+    },
+    {
+      "id": "saikr-50776343bd",
+      "name": "中国移动第十届创客马拉松大赛AI x 无源物联网专题赛",
+      "org": "",
+      "tags": [
+        "AI",
+        "硬件"
+      ],
+      "city": "线上",
+      "online": true,
+      "venue": "",
+      "start": "",
+      "end": "",
+      "reg_deadline": "2026-09-30",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://m.saikr.com/vse/59869",
+      "source": "saikr"
     }
   ]
 }

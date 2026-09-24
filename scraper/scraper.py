@@ -12,10 +12,11 @@
         |--按 id + 标题去重合并--> data/hackathons.json (前端读取)
 
 数据源优先级(同名活动先到先得):
-    manual > ai-pick > huodongxing > modelscope > segmentfault
+    manual > ai-pick > huodongxing > modelscope > segmentfault > saikr
 """
 
 import hashlib
+import html as _html
 import json
 import os
 import re
@@ -202,47 +203,47 @@ def fetch_ai_pick():
 
 # ---------------- 数据源 2: 活动行 ----------------
 def fetch_huodongxing():
-    """活动行搜索页（带查询参数时服务端渲染），搜"黑客松"和"黑客马拉松"两个词"""
+    """活动行搜索页（带查询参数时服务端渲染），搜"黑客松"和"黑客马拉松"两个词。
+
+    页面只显示"MM月DD日"不带年份，且历史活动长期保留在搜索结果里，直接套用
+    当前年份会把 2014/2020 等老活动"复活"成今年。每个活动 logo 图片路径形如
+    /logo/YYYYMM/...，其中 YYYYMM 即活动真实年月，据此淘汰历史活动。
+    """
     out, seen = [], set()
     for kw in ('黑客松', '黑客马拉松'):
         url = 'https://www.huodongxing.com/search?ps=20&pi=0&list=list&qs=%s&st=1,4' \
               % urllib.parse.quote(kw)
         html = http_get(url)
-        # 事件块: <a class="item-title" href="/event/{id}?utm..."> 标题链接（href 带 utm 参数）
-        for m in re.finditer(r'<a[^>]*class="[^"]*item-title[^"]*"[^>]*href="(/event/\d+)[^"]*"[^>]*>', html):
-            tag = m.group(0)
-            link = m.group(1)
-            tm = re.search(r'title="([^"]+)"', tag) or re.search(r'>([^<]+)</a>$', tag)
-            title = tm.group(1).strip() if tm else ''
+        markers = [m.start() for m in re.finditer(r'<img class="item-logo" src="', html)]
+        for idx, pos in enumerate(markers):
+            end = markers[idx + 1] if idx + 1 < len(markers) else pos + 4000
+            block = html[pos:end]
+            lm = re.search(r'logo/(\d{6})/', block)
+            if not lm:
+                continue
+            year = int(lm.group(1)[:4])
+            if year < TODAY.year:  # 历史活动，丢弃
+                continue
+            tm = (re.search(r'class="item-title"[^>]*href="(/event/\d+)[^"]*"[^>]*title="([^"]*)"', block)
+                  or re.search(r'class="item-title"[^>]*href="(/event/\d+)[^"]*"[^>]*>([^<]+)</a>', block))
+            if not tm:
+                continue
+            link, title = tm.group(1), _html.unescape(tm.group(2)).strip()
             if link in seen or not title:
                 continue
-            # 活动行搜索会混入历史活动（页面只显示月日不带年份），
-            # 用标题中的年份过滤：只保留今年/明年，2014、2024 等老活动丢弃
             ty = _title_year(title)
             if ty is not None and not (TODAY.year <= ty <= TODAY.year + 1):
                 continue
             seen.add(link)
-            chunk = html[m.end():m.end() + 3000]
-            cm = re.search(r'class="item-dress-pp"[^>]*>\s*([^<]{1,20}?)\s*<', chunk)
-            city = _norm_city(cm.group(1).strip()) if cm else ''
-            dm = re.search(r'(\d{2})月(\d{2})日', chunk)
+            dm = re.search(r'class="date-pp">(\d{1,2})月(\d{1,2})日', block)
             start = ''
             if dm:
-                mon, day = int(dm.group(1)), int(dm.group(2))
-                year = ty or TODAY.year
                 try:
-                    d0 = datetime(year, mon, day).date()
-                    if not ty and d0 < TODAY - timedelta(days=45):
-                        year += 1
-                    start = '%04d-%02d-%02d' % (year, mon, day)
+                    start = '%04d-%02d-%02d' % (year, int(dm.group(1)), int(dm.group(2)))
                 except ValueError:
-                    pass
-            # 标题无年份且推断日期距今超过 120 天的，视为历史活动丢弃
-            # （老活动的"MM月DD日"会被推到明年，正常黑客松很少提前 4 个月以上售票）
-            if start and ty is None:
-                d1 = datetime.strptime(start, '%Y-%m-%d').date()
-                if d1 > TODAY + timedelta(days=120):
-                    continue
+                    start = ''
+            cm = re.search(r'class="item-dress-pp"[^>]*>\s*([^<]{1,20}?)\s*<', block)
+            city = _norm_city(cm.group(1).strip()) if cm else ''
             out.append({
                 'id': _make_id('hdx', link),
                 'name': title,
@@ -352,11 +353,103 @@ def _sf_fetch(url):
     return out
 
 
+# ---------------- 数据源 5: 赛氪 ----------------
+SAIKR_RELEVANT = [
+    'ai', '人工智能', '大模型', '计算机', '编程', '程序设计', '算法',
+    '大数据', '软件', '开发', '创客', '黑客', '智能', '机器人',
+    '物联网', '数据挖掘', '网络安全', '区块链',
+]
+
+
+def _saikr_relevant(title):
+    low = title.lower()
+    return any(kw in low for kw in SAIKR_RELEVANT)
+
+
+def _saikr_date(s):
+    """'2026.08.13' -> '2026-08-13'"""
+    m = re.search(r'(\d{4})\.(\d{1,2})\.(\d{1,2})', s)
+    return '%04d-%02d-%02d' % (int(m.group(1)), int(m.group(2)), int(m.group(3))) if m else ''
+
+
+def _fetch_saikr_page(html):
+    """解析赛氪一页 HTML/JSON 片段，返回条目列表"""
+    items = []
+    anchors = list(re.finditer(r'<a href="(https?://m\.saikr\.com/vse/[^"]+)" class="item">', html))
+    for idx, m in enumerate(anchors):
+        link = m.group(1)
+        end = anchors[idx + 1].start() if idx + 1 < len(anchors) else m.start() + 3000
+        block = html[m.start():end]
+        tm = re.search(r'<h3 class="item-tit">([^<]+)</h3>', block)
+        if not tm:
+            continue
+        title = _html.unescape(tm.group(1)).strip()
+        if not title or not _saikr_relevant(title):
+            continue
+        reg_deadline = start = end = ''
+        infos = re.findall(
+            r'<div class="item-info-tit">\s*([^<]+?)\s*</div>\s*<ul class="item-info-ul">\s*<li>\s*([^<]+?)\s*</li>',
+            block)
+        for label, val in infos:
+            label, val = label.strip(), val.strip()
+            parts = val.split('-')
+            if '报名' in label:
+                if len(parts) >= 2:
+                    reg_deadline = _saikr_date(parts[1].strip())
+            elif '比赛' in label or '时间' in label:
+                if len(parts) >= 1:
+                    start = _saikr_date(parts[0].strip())
+                if len(parts) >= 2:
+                    end = _saikr_date(parts[1].strip())
+        items.append({
+            'id': _make_id('saikr', link),
+            'name': title,
+            'org': '',
+            'tags': _guess_tags(title),
+            'city': '线上',
+            'online': True,
+            'venue': '',
+            'start': start,
+            'end': end,
+            'reg_deadline': reg_deadline,
+            'fee': '',
+            'prize': 0,
+            'prize_text': '',
+            'url': link,
+            'source': 'saikr',
+        })
+    return items
+
+
+def fetch_saikr():
+    """赛氪竞赛广场（移动版 SSR + 分页接口），保留 AI/计算机类近期竞赛"""
+    out, seen = [], set()
+    html_pages = []
+    try:
+        html_pages.append(http_get('https://m.saikr.com/vs'))
+    except Exception:
+        pass
+    for page in (2, 3, 4, 5):
+        try:
+            data = json.loads(http_get('https://m.saikr.com/vs/ajaxGetList?page=%d' % page))
+            html_pages.append((data.get('data') or {}).get('list') or '')
+        except Exception:
+            break
+    for page_html in html_pages:
+        for e in _fetch_saikr_page(page_html):
+            if e['id'] in seen:
+                continue
+            seen.add(e['id'])
+            out.append(e)
+    return [e for e in out if is_recent(e)]
+
+
 SOURCES = [
     ('ai-pick', fetch_ai_pick),
     ('huodongxing', fetch_huodongxing),
     ('modelscope', fetch_modelscope),
     ('segmentfault', fetch_segmentfault),
+    ('saikr', fetch_saikr),
 ]
 
 # ---------------- 合并逻辑 ----------------
