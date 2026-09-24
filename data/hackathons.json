@@ -1,12 +1,243 @@
 {
-  "updated_at": "2026-09-24 12:17",
+  "updated_at": "2026-09-24 12:49",
   "counts": {
-    "total": 8,
-    "scraped": 2,
+    "total": 97,
+    "scraped": 94,
     "manual": 6
   },
   "errors": [],
   "events": [
+    {
+      "id": "aipick-c2c2075fb7",
+      "name": "USAII Global AI Hackathon 2026",
+      "org": "其他",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-05-31",
+      "end": "2026-09-29",
+      "reg_deadline": "2026-09-29",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "奖金+证书待确认，USAII全球AI学生竞赛",
+      "url": "https://aihackathon.usaii.org/",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-8b1c18649c",
+      "name": "AI Genesis 2026 - Global Hybrid AI Hackathon @ /function1 Dubai",
+      "org": "lablab.ai",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-06-25",
+      "end": "2026-10-01",
+      "reg_deadline": "2026-10-01",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "Large-scale hybrid hackathon (4000+ participants in prior edition), prizes TBA,",
+      "url": "https://lablab.ai/ai-hackathons/ai-genesis-2026",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-7c0c508355",
+      "name": "Decentralize AI Hackathon - $51K+奖金池 + $35K参与者AI计算Credits",
+      "org": "HackerNoon",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-06-26",
+      "end": "2026-10-30",
+      "reg_deadline": "2026-10-30",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "总计$51,750+: $41,750 Nosana GPU计算Credits + 2000 AR ($5,000) 存储+现金 + $5,000 MEXC U",
+      "url": "https://decentralizeai.tech/",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-b47831bb2d",
+      "name": "ETHOnline 2026 - 异步线上AI+Web3 Hackathon",
+      "org": "ETHGlobal",
+      "tags": [
+        "AI",
+        "Web3"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-06-26",
+      "end": "2026-09-15",
+      "reg_deadline": "2026-09-15",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "往届ETHGlobal赛事奖金池$275K+，本届主题和具体奖金待公布",
+      "url": "https://ethglobal.com/events/ethonline2026",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-f3406db0d7",
+      "name": "DevNetwork [API + Cloud + AI] Hackathon 2026 — $40,500现金",
+      "org": "DevNetwork",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-06-28",
+      "end": "2026-09-01",
+      "reg_deadline": "2026-09-01",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "$40,500现金：总冠军$12,500 + Perfect Corp $2,500 + Foxit/Apptio/Impart等$1K赛道；另有DevNetw",
+      "url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-029c77f771",
+      "name": "ETHGlobal Mumbai 2026 — AI+Web3 Hackathon $125K+ Prizes",
+      "org": "ETHGlobal",
+      "tags": [
+        "AI",
+        "Web3"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-06-29",
+      "end": "2026-11-08",
+      "reg_deadline": "2026-11-08",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "Expected $125K+ total prizes (based on ETHGlobal event patterns), cash + credits",
+      "url": "https://ethglobal.com/events/mumbai2026",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-e28004f138",
+      "name": "AI Infra Summit Hackathon 2026 — 生产级AI应用开发 @ Santa Clara",
+      "org": "lablab.ai + Kisaco Research",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-07-03",
+      "end": "2026-09-14",
+      "reg_deadline": "2026-09-14",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "Prize pool TBA，backed by AI Infra Summit (8000+ attendees)",
+      "url": "https://lablab.ai/ai-hackathons/ai-infra-summit-hackathon",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-9e117c0e6c",
+      "name": "MunichTech Innovation Hackathon 2026 — 工业应用AI解决方案",
+      "org": "MunichTech EXPO",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-07-03",
+      "end": "2026-09-19",
+      "reg_deadline": "2026-09-19",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "Corporate prize pool (amount TBA, +4 sponsors)",
+      "url": "https://dorahacks.io/hackathon/2019",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-67144d22dd",
+      "name": "TechEx Amsterdam Hackathon - AI & Big Data Expo Europe 2026",
+      "org": "TechEx + lablab.ai",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-07-06",
+      "end": "2026-09-29",
+      "reg_deadline": "2026-09-29",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "奖品待公布（TBA），评委来自Apple/Amazon/Meta/Google/IBM/JP Morgan等，展示机会佳",
+      "url": "https://lablab.ai/ai-hackathons/techex-amsterdam-hackathon",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-f00ae63868",
+      "name": "WEEX AI Wars II: Rise of Intelligence — $200K USDT AI交易竞赛",
+      "org": "WEEX",
+      "tags": [
+        "AI",
+        "Web3"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-07-13",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "Up to $200K USDT event rewards + 100M LLM tokens for AI strategy builders. DoraH",
+      "url": "https://dorahacks.io/hackathon/weex-ai-wars2/detail",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-ec36d6d047",
+      "name": "BLI Legal Tech Hackathon 2 — $50K+ Bounties & Legal Tech Innovation",
+      "org": "Blockchain Legal Institute",
+      "tags": [
+        "综合"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-07-14",
+      "end": "2026-10-31",
+      "reg_deadline": "2026-10-31",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "$50K+ USD value in bounties, support, and promotion from top blockchain law firm",
+      "url": "https://dorahacks.io/hackathon/legal-hack-2026/detail",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-b470713856",
+      "name": "2026欧莱雅第二届美妆科技黑客松 — ¥20万奖金池 3赛道(AI客服/内容可信/包容体验)",
+      "org": "欧莱雅(中国)",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-07-17",
+      "end": "2026-10-19",
+      "reg_deadline": "2026-10-19",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "¥20万总奖金池(一等奖¥8万×1+二等奖¥3万×2+三等奖¥1万×3+单项奖¥5K×3+明日之星¥3K×5)+欧莱雅实习直通面试+证书+产品大礼包",
+      "url": "https://tianchi.aliyun.com/competition/entrance/532503",
+      "source": "ai-pick"
+    },
     {
       "id": "sf-1160000048056517",
       "name": "2026微信小程序开发大赛",
@@ -21,9 +252,410 @@
       "end": "2026-10-17",
       "reg_deadline": "2026-10-17",
       "fee": "",
+      "prize": 0,
       "prize_text": "",
       "url": "https://segmentfault.com/e/1160000048056517",
       "source": "segmentfault"
+    },
+    {
+      "id": "aipick-b8a397c3e6",
+      "name": "CALL-E: Your Code Is Calling — $10K AI电话Agent开发赛",
+      "org": "CALL-E",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-08-01",
+      "end": "2026-09-14",
+      "reg_deadline": "2026-09-14",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "$10,000 奖金池 + 最有价值反馈奖；新平台早期塑造机会",
+      "url": "https://call-e.devpost.com/",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-a0cbb4d274",
+      "name": "The Rise of AI Agents Hackathon — $60K+ 全球AI Agent (Dubai AI Week)",
+      "org": "lablab.ai + Dubai AI Week",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-08-04",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "$60,000+ prize pool。线上全球 Build Phase + Dubai AI Week 线下决赛（邀请制，不含差旅）。Fall 2026 日期",
+      "url": "https://lablab.ai/ai-hackathons/ai-agents-ai-week-hackathon",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-7f790c23a9",
+      "name": "Creative Minds Jam #1: Hong Kong — $10K创作者经济Agent大赛",
+      "org": "Animoca Brands",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-08-04",
+      "end": "2026-08-28",
+      "reg_deadline": "2026-08-28",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "$10,000奖池 + Minds Investment Programme最高$250K投资机会。全球开放无资格门槛，线上虚拟参与。需用Minds (Anim",
+      "url": "https://dorahacks.io/hackathon/creativeminds/detail",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-d600e5a45a",
+      "name": "BUIDL CTC 2026 Fall — $15K Attestcoin Protocol跨链Hackathon",
+      "org": "Creditcoin",
+      "tags": [
+        "综合"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-08-05",
+      "end": "2026-09-06",
+      "reg_deadline": "2026-09-06",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "$15,000总奖池（Grand $10K/2nd $3K/3rd $2K）+ CertiK审计8K credits + 前三名CEIP投资快速通道（Credi",
+      "url": "https://dorahacks.io/hackathon/buidl-ctc-2026-fall/detail",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-df6e3a396c",
+      "name": "TikTok TechJam 2026 — $34.5K 全球72小时在线Hackathon",
+      "org": "TikTok",
+      "tags": [
+        "综合"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-08-05",
+      "end": "2026-09-01",
+      "reg_deadline": "2026-09-01",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "$34,500 现金奖池（约₹31.7L），分赛道设奖，具体分配见Devpost规则页",
+      "url": "https://tiktoktechjam2026.devpost.com/",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-2af537f8b1",
+      "name": "IBM Bob 2.0 Hackathon — AI辅助开发 $10K 48h线上",
+      "org": "IBM",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-08-06",
+      "end": "2026-09-26",
+      "reg_deadline": "2026-09-26",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "总奖池 $10,000：冠军 $5,000 / 亚军 $3,000 / 季军 $2,000。48小时线上赛",
+      "url": "https://lablab.ai/ai-hackathons/ibm-bob-2-hackathon",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-2dc613fb56",
+      "name": "Decentraland Friendzone Mobile Buildathon",
+      "org": "Decentraland",
+      "tags": [
+        "综合"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-08-10",
+      "end": "2026-09-04",
+      "reg_deadline": "2026-09-04",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "$8,000 MANA 奖池（冠军$3K MANA）+ 前50名$30周边券 + 徽章 + 移动端Discover曝光",
+      "url": "https://dorahacks.io/hackathon/friendzone/detail",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-66827bda7a",
+      "name": "Hack for Humanity Summer 2026 — AI健康主题线上Hackathon",
+      "org": "Hack for Humanity",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-08-12",
+      "end": "2026-09-05",
+      "reg_deadline": "2026-09-05",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "$600现金+13个奖项类别；参与奖礼包(Wolfram 1个月/$50 Render credits/Miro 3个月/DevSwarm/MeDo credi",
+      "url": "https://hack-for-humanity-summer-26.devpost.com/",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-6b7b7f9be3",
+      "name": "Alpaca AI Trading Agents Hackathon — $5K AI交易Agent",
+      "org": "Alpaca + lablab.ai",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-08-13",
+      "end": "2026-09-04",
+      "reg_deadline": "2026-09-04",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "Prize pool $5,000；用 Alpaca Trading API/MCP/CLI 构建 AI 交易 agent，纸面交易环境（模拟资金+真实行情），",
+      "url": "https://lablab.ai/ai-hackathons/alpaca-ai-trading-agents-hackathon",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-f40d2308d9",
+      "name": "Agents for Humans Hackathon — $40K现金 3赛道 AI Agent开发",
+      "org": "AWS",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-08-14",
+      "end": "2026-09-13",
+      "reg_deadline": "2026-09-13",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "$40,000现金，3赛道（日常事务/专业工作流/社区物流），Grand Prize $10K；另送 $50 AWS credits 覆盖构建成本；Strand",
+      "url": "https://agentsforhumans.devpost.com/",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-358c2eec41",
+      "name": "OneAquaHealth IEEE Global Hackathon 2026 — $3K+ 城市水生态AI",
+      "org": "IEEE + OneAquaHealth",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-08-14",
+      "end": "2026-09-30",
+      "reg_deadline": "2026-09-30",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "$3,000+现金，IEEE Merit Award $1,000×3；欧盟 OneAquaHealth 项目背书，获奖作品收录进 OneAquaHealth",
+      "url": "https://oneaquahealth-ieee-hackathon.devpost.com/",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-958712fc2b",
+      "name": "GatewayHacks 2026 — $11.7K现金 软件+AI线上Hackathon",
+      "org": "GatewayGS",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-08-16",
+      "end": "2026-10-01",
+      "reg_deadline": "2026-10-01",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "$11,685现金（Best Overall $2,100/2nd $2,050/3rd $2,035/4th $2,000/Best No-Code AI A",
+      "url": "https://gatewayhacks-2026.devpost.com/",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-3eeba3c3a0",
+      "name": "Event Contracts Hackathon — DeFi事件合约+预测市场 $5K",
+      "org": "Somnia Network",
+      "tags": [
+        "Web3"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-08-18",
+      "end": "2026-09-08",
+      "reg_deadline": "2026-09-08",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "$5,000 奖金池，Somnia Network 主办，聚焦 Event Contracts / 预测市场；线上赛，8/25 开始提交，9/8 截止",
+      "url": "https://dorahacks.io/hackathon/event-contracts",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-c199499d1e",
+      "name": "The Great Agent Hackathon 2026 — 企业AI Agent赛(线上资格赛+班加罗尔24h决赛)",
+      "org": "Freshworks/TGPF 2026",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-08-18",
+      "end": "2026-08-25",
+      "reg_deadline": "2026-08-25",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "₹10万+总奖金：总冠军₹4万现金+₹3万ElevenLabs credits+₹47万Dodo credits；3赛道各₹2万现金；Top20各₹4.7万Do",
+      "url": "https://the-great-agent-hackathon.devpost.com/",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-7a4e02ae42",
+      "name": "IEEE ClimateChain Global Hackathon 2026 — AI+Blockchain气候行动 $3K",
+      "org": "IEEE Turkey",
+      "tags": [
+        "AI",
+        "Web3"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-08-20",
+      "end": "2026-10-24",
+      "reg_deadline": "2026-10-24",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "$3,000 现金奖池；获奖者于 2026.11 联合国 COP31 颁奖典礼公布并展示作品，连接 IEEE Blockchain 社区",
+      "url": "https://ieee-climatechain-hack.devpost.com/",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-89152636b5",
+      "name": "Hack-Nation Global AI Hackathon 7 — $35K+现金与Credits 10/3-4全球14城",
+      "org": "Hack-Nation",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-08-20",
+      "end": "2026-09-26",
+      "reg_deadline": "2026-09-26",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "$35K+ cash & credits；24小时全球AI Hackathon，线上+14城线下Hub混合。MIT CNC/MIT Germany关联。滚动批次",
+      "url": "https://hack-nation.ai/start",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-294be2286a",
+      "name": "AMD Developer Hackathon ACT III — $5K+ AI Agents on AMD GPUs",
+      "org": "AMD",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-08-22",
+      "end": "2026-10-18",
+      "reg_deadline": "2026-10-18",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "$5,000+ 奖金池，AMD GPU云上开发AI Agent/高性能AI应用",
+      "url": "https://lablab.ai/ai-hackathons/amd-developer-hackathon-act-iii",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-7a5c9a08d2",
+      "name": "Creatio Agent Arena Hackathon 2026",
+      "org": "Creatio",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-08-24",
+      "end": "2026-10-01",
+      "reg_deadline": "2026-10-01",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "非现金硬件奖：1st=2×Meta Ray-Ban Display+年度AI工具订阅(Claude/ChatGPT/Midjourney)；2nd=Oakley",
+      "url": "https://www.creatio.com/page/agent-arena-hackathon-2026",
+      "source": "ai-pick"
+    },
+    {
+      "id": "hdx-3f16927d1d",
+      "name": "以太行星黑客松",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "深圳",
+      "online": false,
+      "venue": "",
+      "start": "2026-08-24",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/9504497722600",
+      "source": "huodongxing"
+    },
+    {
+      "id": "aipick-b656475b46",
+      "name": "SheNicest: 2026【烈变】夏季千人黑客松",
+      "org": "SheNicest瓶子",
+      "tags": [
+        "综合"
+      ],
+      "city": "中国",
+      "online": false,
+      "venue": "",
+      "start": "2026-08-26",
+      "end": "2026-08-30",
+      "reg_deadline": "2026-08-30",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "1000 名创造者 96 小时极限共创，下一次世界的跃迁，由我们共同完成！",
+      "url": "https://ocn0g60ffqrb.feishu.cn/share/base/form/shrcnVXZDCqGNWSpl8QFGTpghGc",
+      "source": "ai-pick"
+    },
+    {
+      "id": "hdx-57a9490f7e",
+      "name": "【黑客马拉松】中国旅游极客开发大赛",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "杭州",
+      "online": false,
+      "venue": "",
+      "start": "2026-08-29",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/2236541491400",
+      "source": "huodongxing"
     },
     {
       "id": "manual-xagent-mcp-2026",
@@ -46,6 +678,101 @@
       "source": "manual"
     },
     {
+      "id": "aipick-c94ccbee13",
+      "name": "未央黑客松",
+      "org": "QOKIK",
+      "tags": [
+        "综合"
+      ],
+      "city": "中国",
+      "online": false,
+      "venue": "",
+      "start": "2026-09-02",
+      "end": "2026-09-13",
+      "reg_deadline": "2026-09-13",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "高考结束，新世界向你打开。未央黑客松带你走过三阶段——一周 AI 科普教学、五天开发马拉松、开学路演，打开三扇门：认识 AI、做出一个真东西、遇见一群同类。你不只是大一新生。",
+      "url": "https://watcha.cn/activities",
+      "source": "ai-pick"
+    },
+    {
+      "id": "hdx-af4370bc56",
+      "name": "产品黑客松",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "北京",
+      "online": false,
+      "venue": "",
+      "start": "2026-09-02",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/1398099607800",
+      "source": "huodongxing"
+    },
+    {
+      "id": "aipick-e9dd901cae",
+      "name": "星匣的 GameJam 0907",
+      "org": "星匣",
+      "tags": [
+        "综合"
+      ],
+      "city": "中国",
+      "online": false,
+      "venue": "",
+      "start": "2026-09-07",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "星匣 GameJam 限时 AI 游戏创作挑战，参与即体验 AI 游戏生成；具体奖池与权益详见活动页",
+      "url": "https://www.virtualoverapp.com/cms/286343/gamejam0907.html",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-78e1b6f2e8",
+      "name": "Google AI Builder Cup 2026",
+      "org": "Google Cloud",
+      "tags": [
+        "AI"
+      ],
+      "city": "亚太",
+      "online": false,
+      "venue": "",
+      "start": "2026-09-07",
+      "end": "",
+      "reg_deadline": "2026-10-04",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "$30,000现金奖池 + 新加坡决赛免费差旅",
+      "url": "https://opportunitiesradar.com/google-ai-builder-cup-2026/",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-40f06200f4",
+      "name": "天猫AI黑客松高校挑战赛",
+      "org": "天猫",
+      "tags": [
+        "AI"
+      ],
+      "city": "中国",
+      "online": false,
+      "venue": "",
+      "start": "2026-09-08",
+      "end": "",
+      "reg_deadline": "2026-10-07",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "48小时极限开发，用AI把想法变成现实，总奖金20万，校招面试直通机会，作品有机会被头部品牌选中",
+      "url": "https://weibo.com/1768198384/5340844417615948",
+      "source": "ai-pick"
+    },
+    {
       "id": "manual-avax-team1-china-2026",
       "name": "Avalanche Builder Launchpad · Team1 China 线上黑客松",
       "org": "Avalanche",
@@ -65,6 +792,63 @@
       "source": "manual"
     },
     {
+      "id": "hdx-93fa516a53",
+      "name": "AI agent 黑客松",
+      "org": "",
+      "tags": [
+        "AI"
+      ],
+      "city": "长沙",
+      "online": false,
+      "venue": "",
+      "start": "2026-09-15",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/3876455349000",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-5bd6d06a77",
+      "name": "ArcBlock 黑客马拉松 | 北京",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "北京",
+      "online": false,
+      "venue": "",
+      "start": "2026-09-15",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/8456393424200",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-dafdf4b718",
+      "name": "社会创新黑客松",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "深圳",
+      "online": false,
+      "venue": "",
+      "start": "2026-09-21",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/3825644654200",
+      "source": "huodongxing"
+    },
+    {
       "id": "sf-1160000048311180",
       "name": "2026脑启社区第三届类脑智能创新大赛",
       "org": "",
@@ -78,6 +862,7 @@
       "end": "2026-11-03",
       "reg_deadline": "2026-10-31",
       "fee": "",
+      "prize": 0,
       "prize_text": "",
       "url": "https://segmentfault.com/e/1160000048311180",
       "source": "segmentfault"
@@ -121,6 +906,120 @@
       "source": "manual"
     },
     {
+      "id": "aipick-27c09b933d",
+      "name": "HackAlem AI 黑客松",
+      "org": "OpenAI",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "2026-09-23",
+      "end": "2026-09-23",
+      "reg_deadline": "2026-09-23",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "$100,000现金 + $100,000 OpenAI API tokens，总资源约$1.1M",
+      "url": "https://hackalem.ai",
+      "source": "ai-pick"
+    },
+    {
+      "id": "hdx-cd9aa42d26",
+      "name": "四川文旅「百县千剧」x目音Musein黑客松 9月24日",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "成都",
+      "online": false,
+      "venue": "",
+      "start": "2026-09-24",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/4879783799900",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-98ec82fed1",
+      "name": "Innovation for Tomorrow——黑客松应用",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "北京",
+      "online": false,
+      "venue": "",
+      "start": "2026-09-25",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/7774265962000",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-76bc0e17f1",
+      "name": "黑客松赛事",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "广州",
+      "online": false,
+      "venue": "",
+      "start": "2026-09-30",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/5878649799600",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-0976673e8c",
+      "name": "2014中日黑客马拉松",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "上海",
+      "online": false,
+      "venue": "",
+      "start": "2026-10-10",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/5247884385600",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-4de4d81fbd",
+      "name": "【黑客马拉松】革新创客社群 Hack the Community HACKATHON",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "北京",
+      "online": false,
+      "venue": "",
+      "start": "2026-10-13",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/8457158176911",
+      "source": "huodongxing"
+    },
+    {
       "id": "manual-laisen-horizon-2026",
       "name": "莱森地平线：多智能体 AI 黑客松",
       "org": "莱森购科技",
@@ -140,6 +1039,44 @@
       "source": "manual"
     },
     {
+      "id": "hdx-3278097f8e",
+      "name": "Sora 2 AI视频迷你黑客松",
+      "org": "",
+      "tags": [
+        "AI"
+      ],
+      "city": "北京",
+      "online": false,
+      "venue": "",
+      "start": "2026-10-19",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/7830677139700",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-10d7e23ac6",
+      "name": "Beijing Cleantech Hackathon 北京清洁技术黑客马拉松",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "北京",
+      "online": false,
+      "venue": "",
+      "start": "2026-10-20",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/4457276048400",
+      "source": "huodongxing"
+    },
+    {
       "id": "manual-cathay-2026",
       "name": "Cathay Hackathon 2026（国泰航空黑客松）",
       "org": "国泰航空 Cathay Pacific",
@@ -157,6 +1094,767 @@
       "prize_text": "商务舱机票 + 最高50万港元创意基金",
       "url": "https://hackathon.cathaypacific.com/index.html",
       "source": "manual"
+    },
+    {
+      "id": "hdx-b584f3a61e",
+      "name": "牛津计划&#183;Docker黑客松马拉松中场充电站",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "北京",
+      "online": false,
+      "venue": "",
+      "start": "2026-11-22",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/9308149000700",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-1179e57d1b",
+      "name": "PatSnap第二届黑客马拉松",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "苏州",
+      "online": false,
+      "venue": "",
+      "start": "2026-11-22",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/7252800989500",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-2e724a0746",
+      "name": "长沙区块链黑客马拉松",
+      "org": "",
+      "tags": [
+        "Web3"
+      ],
+      "city": "长沙",
+      "online": false,
+      "venue": "",
+      "start": "2026-12-12",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/4574802703600",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-a8e1799d46",
+      "name": "微信小程序黑客马拉松",
+      "org": "",
+      "tags": [
+        "应用"
+      ],
+      "city": "北京",
+      "online": false,
+      "venue": "",
+      "start": "2026-12-15",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/4465637169100",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-30016051d7",
+      "name": "2015沪港黑客马拉松",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "上海",
+      "online": false,
+      "venue": "",
+      "start": "2027-03-27",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/9271396760800",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-9d616f232e",
+      "name": "黑客松路演观众报名",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "北京",
+      "online": false,
+      "venue": "",
+      "start": "2027-04-05",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/4802288419100",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-a5de762227",
+      "name": "中关村创坛 | Uowai黑客松",
+      "org": "",
+      "tags": [
+        "AI"
+      ],
+      "city": "线上活动",
+      "online": true,
+      "venue": "",
+      "start": "2027-04-06",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/2853987905200",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-2bb414e8ac",
+      "name": "Ubuntu手机黑客松 - Celebrate Ubuntu",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "上海",
+      "online": false,
+      "venue": "",
+      "start": "2027-04-09",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/7325548045000",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-a83020c0e4",
+      "name": "区块链黑客马拉松——HackSthTogether No.2",
+      "org": "",
+      "tags": [
+        "Web3"
+      ],
+      "city": "上海",
+      "online": false,
+      "venue": "",
+      "start": "2027-04-09",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/1434304588300",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-3dcad1fc55",
+      "name": "HELLO SDK — 神策2019 SDK黑客松",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "北京",
+      "online": false,
+      "venue": "",
+      "start": "2027-05-11",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/7491564144600",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-2ff2f941e9",
+      "name": "黑客马拉松挑战赛－大连站",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "大连",
+      "online": false,
+      "venue": "",
+      "start": "2027-05-14",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/9646047460500",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-8ceedec044",
+      "name": "【AKHacks】区块链 夏季Hackathon黑客马拉松",
+      "org": "",
+      "tags": [
+        "Web3"
+      ],
+      "city": "北京",
+      "online": false,
+      "venue": "",
+      "start": "2027-05-19",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/2439411387100",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-d4d25c2546",
+      "name": "SegmentFault 区块链黑客马拉松——SegmentFault Hackathon 2018 杭州",
+      "org": "",
+      "tags": [
+        "Web3"
+      ],
+      "city": "杭州",
+      "online": false,
+      "venue": "",
+      "start": "2027-06-02",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/5436426698600",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-33fc91ef9b",
+      "name": "黑客松 Build For LOVE",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "北京",
+      "online": false,
+      "venue": "",
+      "start": "2027-06-20",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/8865727986900",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-7b96c30eea",
+      "name": "AngelHack天使黑客全球黑客马拉松2018深圳站",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "深圳",
+      "online": false,
+      "venue": "",
+      "start": "2027-06-23",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/5443085388200",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-d1674762f4",
+      "name": "SegmentFault黑客马拉松2014北京站",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "北京",
+      "online": false,
+      "venue": "",
+      "start": "2027-06-28",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/9234662660200",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-500ad48c3d",
+      "name": "AngelHack全球黑客马拉松系列 - 上海站",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "上海",
+      "online": false,
+      "venue": "",
+      "start": "2027-06-30",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/7445258889500",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-750667e24b",
+      "name": "极速产品黑客松",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "北京",
+      "online": false,
+      "venue": "",
+      "start": "2027-07-01",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/9393183279300",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-3a5b031af2",
+      "name": "奥林匹斯青少年黑客松",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "北京",
+      "online": false,
+      "venue": "",
+      "start": "2027-07-04",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/2867809935600",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-cc0470f28a",
+      "name": "资深黑客松参赛者袁老师分享：AI黑客松参赛经验",
+      "org": "",
+      "tags": [
+        "AI"
+      ],
+      "city": "线上活动",
+      "online": true,
+      "venue": "",
+      "start": "2027-07-11",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/5867893083600",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-52a240eaf8",
+      "name": "XR 黑客马拉松 2025 广州站",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "广州",
+      "online": false,
+      "venue": "",
+      "start": "2027-07-18",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/5816018674100",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-b5454cc980",
+      "name": "XR 黑客马拉松 2025 上海站",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "上海",
+      "online": false,
+      "venue": "",
+      "start": "2027-07-18",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/8816015704500",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-4a604c15b6",
+      "name": "XR 黑客马拉松 2025 北京站",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "北京",
+      "online": false,
+      "venue": "",
+      "start": "2027-07-18",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/5815936698700",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-abcd636e2a",
+      "name": "2015中美黑客马拉松",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "上海",
+      "online": false,
+      "venue": "",
+      "start": "2027-07-24",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/7288928356700",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-8c632a0ae1",
+      "name": "奥林匹斯杯少年黑客松",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "北京",
+      "online": false,
+      "venue": "",
+      "start": "2027-08-01",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/8870740343700",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-5c421c173a",
+      "name": "杭州！Monad Blitz 黑客松 Demo Day",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "杭州",
+      "online": false,
+      "venue": "",
+      "start": "2027-08-02",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/7817163073000",
+      "source": "huodongxing"
+    },
+    {
+      "id": "aipick-caf1427d1e",
+      "name": "VoltHacks — IoT + AI Hackathon",
+      "org": "其他",
+      "tags": [
+        "AI",
+        "硬件"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "",
+      "end": "2026-09-04",
+      "reg_deadline": "2026-09-04",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "$2,905 prize pool, 637 registrations",
+      "url": "https://volthacks.devpost.com/",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-2097c28228",
+      "name": "Agentic Cinema: The Blockbuster Hackathon",
+      "org": "其他",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "$75,000 总奖池",
+      "url": "https://agentic-cinema.devpost.com/",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-5dbe1c430e",
+      "name": "CockroachDB × AWS Hackathon — Build with Agentic Memory",
+      "org": "其他",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "$8,750 总奖池",
+      "url": "https://cockroachdb-aws.devpost.com/",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-5d4d1d23dc",
+      "name": "KeeperHub — Agents Onchain Hackathon",
+      "org": "其他",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "链上Agent黑客松",
+      "url": "https://dorahacks.io/hackathon/agents-onchain/detail",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-b095365cb7",
+      "name": "Build, Ship, Shape: Amazon Developer Hackathon",
+      "org": "其他",
+      "tags": [
+        "综合"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "",
+      "end": "2026-10-22",
+      "reg_deadline": "2026-10-22",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "$138,000 总奖池（Fire TV 赛道一等奖 $25,000 + $15,000 AWS Credits）",
+      "url": "https://amazonappdev2026.devpost.com/",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-5936563e27",
+      "name": "Nebius x NVIDIA Global AI Hackathon",
+      "org": "NVIDIA",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "",
+      "end": "2026-10-29",
+      "reg_deadline": "2026-10-29",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "$50,000+ 奖池（Grand Prize $20,000；含 NVIDIA Jetson Orin Nano 硬件奖）",
+      "url": "https://nebiusglobalaihackathon.devpost.com/",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-9a75e513b7",
+      "name": "Galuxium Nexus V2",
+      "org": "其他",
+      "tags": [
+        "综合"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "",
+      "end": "2026-10-30",
+      "reg_deadline": "2026-10-30",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "$14,944 现金（1st $6,768 + Adaption Labs $5,000 credits 等）",
+      "url": "https://galuxium-nexus-v2-29411.devpost.com/",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-e6b9425a59",
+      "name": "Build With AI: Basics",
+      "org": "其他",
+      "tags": [
+        "AI"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "",
+      "end": "2026-10-25",
+      "reg_deadline": "2026-10-25",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "$2,500 奖池（$1,250 / $750 / $500），面向入门者",
+      "url": "https://learn-ai-basics.devpost.com/",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-67f3114a51",
+      "name": "2026 MoonBit 黑客松（九月赛）",
+      "org": "其他",
+      "tags": [
+        "综合"
+      ],
+      "city": "中国",
+      "online": false,
+      "venue": "",
+      "start": "",
+      "end": "2026-09-29",
+      "reg_deadline": "2026-09-29",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "月度支持 ¥150 启动 + ¥350 完成；季度一等奖 ¥12,000（池 ¥80,000）；单人最高可叠加约 ¥75,000；MVP 通道 ¥2k-5k/月",
+      "url": "https://moonbitlang.github.io/Hackathon2026/",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-d2ac4f7faf",
+      "name": "Global Innovation Build Challenge V2",
+      "org": "其他",
+      "tags": [
+        "综合"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "",
+      "end": "2026-09-30",
+      "reg_deadline": "2026-09-30",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "非现金奖：NordVPN/CodeCrafters 会员、Adaption Labs $1,000 credits + 3 个月订阅、官方证书（1424 人已报",
+      "url": "https://gibc-v2.devpost.com/",
+      "source": "ai-pick"
+    },
+    {
+      "id": "aipick-a694373ff2",
+      "name": "ML Empowerment Build Challenge 3.0",
+      "org": "其他",
+      "tags": [
+        "综合"
+      ],
+      "city": "全球",
+      "online": true,
+      "venue": "",
+      "start": "",
+      "end": "2026-10-04",
+      "reg_deadline": "2026-10-04",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "1st：$2,000 Momen credits + Mobbin Pro 年费；Top10 有证书；所有参与者可得 $100 Momen credits",
+      "url": "https://ml-build-challenge-3.devpost.com/",
+      "source": "ai-pick"
+    },
+    {
+      "id": "ms-376",
+      "name": "西客松｜Shaanxi Hackathon",
+      "org": "魔搭社区",
+      "tags": [
+        "综合"
+      ],
+      "city": "线上",
+      "online": true,
+      "venue": "",
+      "start": "",
+      "end": "",
+      "reg_deadline": "2026-09-30",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://xihack.com/#partners",
+      "source": "modelscope"
+    },
+    {
+      "id": "ms-371",
+      "name": "罕见·无界黑客松",
+      "org": "魔搭社区",
+      "tags": [
+        "综合"
+      ],
+      "city": "线上",
+      "online": true,
+      "venue": "",
+      "start": "",
+      "end": "",
+      "reg_deadline": "2026-09-21",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://lcnh7zi6opm8.feishu.cn/share/base/form/shrcnRaGEuY6QEMPobngMTk54HB",
+      "source": "modelscope"
+    },
+    {
+      "id": "ms-352",
+      "name": "中客松 ING Hackathon 2026",
+      "org": "魔搭社区",
+      "tags": [
+        "综合"
+      ],
+      "city": "线上",
+      "online": true,
+      "venue": "",
+      "start": "",
+      "end": "",
+      "reg_deadline": "2026-09-11",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "http://8.160.176.218/apply?sessionid=#story",
+      "source": "modelscope"
     }
   ]
 }
