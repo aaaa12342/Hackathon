@@ -1,0 +1,162 @@
+{
+  "updated_at": "2026-09-24 12:17",
+  "counts": {
+    "total": 8,
+    "scraped": 2,
+    "manual": 6
+  },
+  "errors": [],
+  "events": [
+    {
+      "id": "sf-1160000048056517",
+      "name": "2026微信小程序开发大赛",
+      "org": "",
+      "tags": [
+        "应用"
+      ],
+      "city": "线上",
+      "online": true,
+      "venue": "",
+      "start": "2026-07-21",
+      "end": "2026-10-17",
+      "reg_deadline": "2026-10-17",
+      "fee": "",
+      "prize_text": "",
+      "url": "https://segmentfault.com/e/1160000048056517",
+      "source": "segmentfault"
+    },
+    {
+      "id": "manual-xagent-mcp-2026",
+      "name": "X-Agent AI MCP Hackathon 2026",
+      "org": "X-Agent（OlaXBT 支持）",
+      "tags": [
+        "AI",
+        "Web3"
+      ],
+      "city": "线上",
+      "online": true,
+      "venue": "",
+      "start": "2026-09-02",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "免费",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.chaincatcher.com/article/2291680",
+      "source": "manual"
+    },
+    {
+      "id": "manual-avax-team1-china-2026",
+      "name": "Avalanche Builder Launchpad · Team1 China 线上黑客松",
+      "org": "Avalanche",
+      "tags": [
+        "Web3"
+      ],
+      "city": "线上",
+      "online": true,
+      "venue": "",
+      "start": "2026-09-14",
+      "end": "2026-09-30",
+      "reg_deadline": "2026-09-30",
+      "fee": "免费",
+      "prize": 7000,
+      "prize_text": "1000 USDT 奖池",
+      "url": "https://build.avax.network/events/093982ed-7037-4765-a066-56a5d3cff8cb",
+      "source": "manual"
+    },
+    {
+      "id": "sf-1160000048311180",
+      "name": "2026脑启社区第三届类脑智能创新大赛",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "嘉兴",
+      "online": false,
+      "venue": "世界互联网大会“互联网之光”博览会",
+      "start": "2026-09-22",
+      "end": "2026-11-03",
+      "reg_deadline": "2026-10-31",
+      "fee": "",
+      "prize_text": "",
+      "url": "https://segmentfault.com/e/1160000048311180",
+      "source": "segmentfault"
+    },
+    {
+      "id": "manual-songjiang-ai-game-2026",
+      "name": "AI GENESIS 松江创世纪 · 2026首届AI游戏创作创业大赛",
+      "org": "上海松江",
+      "tags": [
+        "AI"
+      ],
+      "city": "上海",
+      "online": false,
+      "venue": "上海松江",
+      "start": "2026-09-23",
+      "end": "2026-11-15",
+      "reg_deadline": "2026-11-15",
+      "fee": "免费",
+      "prize": 130000,
+      "prize_text": "总奖金池13万+ 网易实习机会",
+      "url": "https://www.aitop100.cn/infomation/details/34759.html",
+      "source": "manual"
+    },
+    {
+      "id": "manual-aigcc-2026",
+      "name": "AIGCC 2026 全球AI游戏创作大赛",
+      "org": "AIGCC 组委会",
+      "tags": [
+        "AI"
+      ],
+      "city": "线上",
+      "online": true,
+      "venue": "",
+      "start": "2026-09-23",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "免费",
+      "prize": 200000,
+      "prize_text": "20万奖金池 + 60万元词元资源",
+      "url": "https://www.aitop100.cn/infomation/details/34751.html",
+      "source": "manual"
+    },
+    {
+      "id": "manual-laisen-horizon-2026",
+      "name": "莱森地平线：多智能体 AI 黑客松",
+      "org": "莱森购科技",
+      "tags": [
+        "AI"
+      ],
+      "city": "长春",
+      "online": false,
+      "venue": "长春（线下）",
+      "start": "2026-10-16",
+      "end": "2026-10-17",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "现金奖励 + 展示与项目对接机会",
+      "url": "https://cloud.tencent.cn/developer/news/4444609",
+      "source": "manual"
+    },
+    {
+      "id": "manual-cathay-2026",
+      "name": "Cathay Hackathon 2026（国泰航空黑客松）",
+      "org": "国泰航空 Cathay Pacific",
+      "tags": [
+        "综合"
+      ],
+      "city": "香港",
+      "online": false,
+      "venue": "国泰城 Cathay City（大师班：香港/深圳）",
+      "start": "2026-11-15",
+      "end": "2026-11-16",
+      "reg_deadline": "2026-09-27",
+      "fee": "免费",
+      "prize": 500000,
+      "prize_text": "商务舱机票 + 最高50万港元创意基金",
+      "url": "https://hackathon.cathaypacific.com/index.html",
+      "source": "manual"
+    }
+  ]
+}

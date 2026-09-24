@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中国黑客松日历</title>
+<style>
+:root {
+  --surface: #ffffff;
+  --surface-muted: #f4f4f6;
+  --bg: #f7f7f8;
+  --text: #171717;
+  --text-muted: #52525b;
+  --border: rgba(23, 23, 23, 0.12);
+  --brand: #4b3fe3;
+  --brand-soft: #f2f7ff;
+  --brand-soft-strong: #e5eaff;
+  --brand-text: #1a1759;
+  --brand-on: #ffffff;
+  --success: #1dc981;
+  --danger: #e8463a;
+  --radius: 8px;
+  --radius-card: 12px;
+  --radius-full: 999px;
+  --font-sans: "SF Pro Text", "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: #1e1e20;
+    --surface-muted: #2a2a2d;
+    --bg: #171717;
+    --text: #e5e5e5;
+    --text-muted: #a1a1aa;
+    --border: rgba(229, 229, 229, 0.14);
+    --brand: #6054f1;
+    --brand-soft: #1a1759;
+    --brand-soft-strong: #3c2eca;
+    --brand-text: #cfd8ff;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 400 14px/20px var(--font-sans);
+}
+.wrap { max-width: 960px; margin: 0 auto; padding: 24px 16px 48px; }
+
+/* 顶栏 */
+.head { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; padding: 4px 4px 12px; }
+.title { font: 600 20px/28px var(--font-sans); }
+.sub { font-size: 12px; line-height: 18px; color: var(--text-muted); margin-top: 2px; }
+.city-pick { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 500; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-full); padding: 4px 12px; }
+.city-pick select { border: none; background: transparent; color: var(--text); font: 500 12px/18px var(--font-sans); outline: none; cursor: pointer; }
+
+/* 筛选与排序 */
+.toolbar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; padding: 8px 0 12px; }
+.tags { display: flex; gap: 8px; flex-wrap: wrap; }
+.pill { font: 500 12px/18px var(--font-sans); color: var(--text-muted); background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-full); padding: 4px 12px; cursor: pointer; transition: all .1s; }
+.pill:hover { border-color: var(--brand); color: var(--brand); }
+.pill.on { background: var(--brand-soft-strong); border-color: var(--brand); color: var(--brand-text); }
+.seg { display: flex; gap: 4px; background: var(--surface-muted); border-radius: var(--radius); padding: 4px; }
+.seg button { font: 500 12px/18px var(--font-sans); color: var(--text-muted); background: transparent; border: none; border-radius: var(--radius); padding: 4px 12px; cursor: pointer; }
+.seg button.on { background: var(--surface); color: var(--text); box-shadow: 0 1px 2px rgba(0,0,0,.1); }
+
+/* 列表 */
+.list { display: flex; flex-direction: column; gap: 8px; }
+.row { display: flex; align-items: center; gap: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-card); padding: 12px 16px; }
+.row.dim { opacity: .55; }
+.date { flex-shrink: 0; width: 54px; text-align: center; }
+.date .m { font-size: 12px; line-height: 16px; color: var(--text-muted); }
+.date .d { font: 600 18px/22px var(--font-sans); font-variant-numeric: tabular-nums; }
+.main { flex: 1; min-width: 0; }
+.name { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.name .n { font-weight: 500; overflow: hidden; text-overflow: ellipsis; }
+.badge { flex-shrink: 0; font-size: 12px; line-height: 18px; font-weight: 500; border-radius: var(--radius-full); padding: 0 8px; }
+.badge.open { color: var(--success); background: color-mix(in srgb, var(--success) 12%, transparent); }
+.badge.closing { color: var(--danger); background: color-mix(in srgb, var(--danger) 12%, transparent); }
+.badge.ongoing { color: var(--brand); background: var(--brand-soft); }
+.badge.todo { color: var(--text-muted); background: var(--surface-muted); }
+.badge.done { color: var(--text-muted); background: var(--surface-muted); }
+.meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 12px; line-height: 18px; color: var(--text-muted); margin-top: 4px; }
+.meta .ddl-hot { color: var(--danger); font-weight: 500; }
+.chip { font-size: 12px; line-height: 18px; color: var(--text-muted); background: var(--surface-muted); border-radius: var(--radius); padding: 0 8px; }
+.chip.onl { color: var(--brand-text); background: var(--brand-soft); }
+.right { flex-shrink: 0; display: flex; align-items: center; gap: 12px; }
+.prize { text-align: right; }
+.prize .p { font: 600 13px/18px var(--font-sans); font-variant-numeric: tabular-nums; }
+.prize .l { font-size: 12px; line-height: 16px; color: var(--text-muted); }
+.go { font: 500 12px/18px var(--font-sans); color: var(--brand-on); background: var(--brand); border: none; border-radius: var(--radius-full); padding: 6px 14px; cursor: pointer; text-decoration: none; display: inline-block; }
+.go:hover { opacity: .88; }
+.empty { text-align: center; color: var(--text-muted); padding: 48px 0; }
+.foot { margin-top: 16px; font-size: 12px; line-height: 18px; color: var(--text-muted); text-align: center; }
+
+@media (max-width: 640px) {
+  .row { flex-wrap: wrap; }
+  .date { width: 48px; }
+  .right { width: 100%; justify-content: flex-end; }
+  .prize { margin-left: auto; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <div>
+      <div class="title">中国黑客松日历</div>
+      <div class="sub" id="count">加载中…</div>
+    </div>
+    <label class="city-pick">📍 我的城市
+      <select id="city"><option value="">全部</option></select>
+    </label>
+  </div>
+  <div class="toolbar">
+    <div class="tags" id="tags"></div>
+    <div class="seg" id="sort">
+      <button data-sort="smart" class="on">综合</button>
+      <button data-sort="time">时间最近</button>
+      <button data-sort="ddl">截止临近</button>
+      <button data-sort="prize">奖金</button>
+    </div>
+  </div>
+  <div class="list" id="list"></div>
+  <div class="foot" id="foot"></div>
+</div>
+
+<script>
+(function () {
+  var state = { tag: '全部', city: '', sort: 'smart' };
+  var ALL = [];
+
+  // ---- 状态计算 ----
+  function today() { return new Date(); }
+  function d(str) { return str ? new Date(str + 'T23:59:59+08:00') : null; }
+  function status(e) {
+    var now = today(), s = d(e.start), en = d(e.end) || d(e.reg_deadline), ddl = d(e.reg_deadline);
+    if (en && en < now) return 'done';
+    if (s && s <= now && (!en || en >= now)) return 'ongoing';
+    if (ddl) {
+      if (ddl < now) return 'todo';
+      if ((ddl - now) / 86400000 <= 3) return 'closing';
+    }
+    return 'open';
+  }
+  var RANK = { closing: 0, open: 1, ongoing: 2, todo: 3, done: 4 };
+  var LABEL = { open: '报名中', closing: '即将截止', ongoing: '进行中', todo: '待开始', done: '已结束' };
+
+  // ---- 渲染 ----
+  function visible() {
+    return ALL.filter(function (e) { return state.tag === '全部' || (e.tags || []).indexOf(state.tag) >= 0; });
+  }
+  function sorted(list) {
+    var arr = list.slice();
+    var cityBoost = function (e) {
+      if (!state.city) return 1;
+      if (e.city === state.city) return 0;
+      if (e.online) return 1;
+      return 2;
+    };
+    if (state.sort === 'smart') arr.sort(function (a, b) { return cityBoost(a) - cityBoost(b) || RANK[status(a)] - RANK[status(b)] || (a.start || '9999').localeCompare(b.start || '9999'); });
+    if (state.sort === 'time') arr.sort(function (a, b) { return cityBoost(a) - cityBoost(b) || (a.start || '9999').localeCompare(b.start || '9999'); });
+    if (state.sort === 'ddl') arr.sort(function (a, b) { return cityBoost(a) - cityBoost(b) || (a.reg_deadline || '9999').localeCompare(b.reg_deadline || '9999'); });
+    if (state.sort === 'prize') arr.sort(function (a, b) { return cityBoost(a) - cityBoost(b) || (b.prize || 0) - (a.prize || 0); });
+    return arr;
+  }
+  function fmtPrize(e) {
+    if (e.prize_text) return e.prize_text;
+    if (e.prize) return e.prize >= 10000 ? '¥' + (e.prize / 10000) + '万' : '¥' + e.prize;
+    return '';
+  }
+  function render() {
+    var list = sorted(visible()), html = '';
+    list.forEach(function (e) {
+      var st = status(e);
+      var md = (e.start || '').split('-');
+      var badge = '<span class="badge ' + st + '">' + LABEL[st] + '</span>';
+      var ddlText = e.reg_deadline
+        ? (st === 'done' ? '已结束' : (st === 'closing' ? '<span class="ddl-hot">报名截止 ' + e.reg_deadline + ' ⚠</span>' : '报名截止 ' + e.reg_deadline))
+        : '';
+      var chips = (e.tags || []).map(function (t) { return '<span class="chip">' + t + '</span>'; }).join('');
+      if (e.online) chips += '<span class="chip onl">线上</span>';
+      var prize = fmtPrize(e);
+      html += '<div class="row' + (st === 'done' ? ' dim' : '') + '">'
+        + '<div class="date"><div class="m">' + (md[1] ? +md[1] + '月' : '?') + '</div><div class="d">' + (md[2] ? +md[2] : '?') + '</div></div>'
+        + '<div class="main"><div class="name"><span class="n">' + e.name + '</span>' + badge + '</div>'
+        + '<div class="meta">'
+        + '<span>' + e.city + '</span>'
+        + (e.org ? '<span>·</span><span>' + e.org + '</span>' : '')
+        + (ddlText ? '<span>·</span><span>' + ddlText + '</span>' : '')
+        + chips
+        + '</div></div>'
+        + '<div class="right">'
+        + (prize ? '<div class="prize"><div class="p">' + prize + '</div><div class="l">奖励</div></div>' : '')
+        + '<a class="go" href="' + e.url + '" target="_blank" rel="noopener">直达 ↗</a>'
+        + '</div></div>';
+    });
+    document.getElementById('list').innerHTML = html || '<div class="empty">没有符合条件的活动</div>';
+    document.getElementById('count').textContent = list.length + ' 场活动' + (state.city ? ' · ' + state.city + '优先' : '');
+  }
+
+  // ---- 初始化控件 ----
+  function initControls(data) {
+    var tags = {}, cities = {};
+    data.events.forEach(function (e) {
+      (e.tags || []).forEach(function (t) { tags[t] = 1; });
+      cities[e.city] = 1;
+    });
+    document.getElementById('tags').innerHTML = ['全部'].concat(Object.keys(tags)).map(function (t) {
+      return '<button class="pill' + (t === state.tag ? ' on' : '') + '" data-tag="' + t + '">' + t + '</button>';
+    }).join('');
+    document.getElementById('city').innerHTML = '<option value="">全部</option>' + Object.keys(cities).sort().map(function (c) {
+      return '<option value="' + c + '"' + (c === state.city ? ' selected' : '') + '>' + c + '</option>';
+    }).join('');
+
+    document.getElementById('tags').addEventListener('click', function (ev) {
+      var b = ev.target.closest('.pill'); if (!b) return;
+      this.querySelectorAll('.pill').forEach(function (p) { p.classList.remove('on'); });
+      b.classList.add('on'); state.tag = b.dataset.tag; render();
+    });
+    document.getElementById('sort').addEventListener('click', function (ev) {
+      var b = ev.target.closest('button'); if (!b) return;
+      this.querySelectorAll('button').forEach(function (p) { p.classList.remove('on'); });
+      b.classList.add('on'); state.sort = b.dataset.sort; render();
+    });
+    document.getElementById('city').addEventListener('change', function () {
+      state.city = this.value;
+      try { localStorage.setItem('hkx-city', state.city); } catch (e) {}
+      render();
+    });
+  }
+
+  // ---- 加载数据 ----
+  fetch('data/hackathons.json').then(function (r) { return r.json(); }).then(function (data) {
+    ALL = data.events || [];
+    try { state.city = localStorage.getItem('hkx-city') || ''; } catch (e) {}
+    initControls(data);
+    render();
+    document.getElementById('foot').textContent = '数据更新于 ' + data.updated_at + ' · 抓取 ' + (data.counts.scraped || 0) + ' 条 + 手动 ' + (data.counts.manual || 0) + ' 条 · 每日自动更新';
+  }).catch(function () {
+    document.getElementById('count').textContent = '数据加载失败';
+    document.getElementById('list').innerHTML = '<div class="empty">无法加载 data/hackathons.json<br>如果直接双击打开本文件，请用本地服务器预览：<br>python -m http.server</div>';
+  });
+})();
+</script>
+</body>
+</html>
