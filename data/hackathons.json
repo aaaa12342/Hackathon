@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-24 16:12",
+  "updated_at": "2026-09-25 12:11",
   "counts": {
-    "total": 68,
-    "scraped": 64,
+    "total": 66,
+    "scraped": 62,
     "manual": 6
   },
   "errors": [],
@@ -485,25 +485,6 @@
       "source": "ai-pick"
     },
     {
-      "id": "aipick-c199499d1e",
-      "name": "The Great Agent Hackathon 2026 — 企业AI Agent赛(线上资格赛+班加罗尔24h决赛)",
-      "org": "Freshworks/TGPF 2026",
-      "tags": [
-        "AI"
-      ],
-      "city": "全球",
-      "online": true,
-      "venue": "",
-      "start": "2026-08-18",
-      "end": "2026-08-25",
-      "reg_deadline": "2026-08-25",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "₹10万+总奖金：总冠军₹4万现金+₹3万ElevenLabs credits+₹47万Dodo credits；3赛道各₹2万现金；Top20各₹4.7万Do",
-      "url": "https://the-great-agent-hackathon.devpost.com/",
-      "source": "ai-pick"
-    },
-    {
       "id": "aipick-7a4e02ae42",
       "name": "IEEE ClimateChain Global Hackathon 2026 — AI+Blockchain气候行动 $3K",
       "org": "IEEE Turkey",
@@ -810,44 +791,6 @@
       "source": "ai-pick"
     },
     {
-      "id": "saikr-62ed679f97",
-      "name": "【立即报名！正在考试！】AI大模型创新应用挑战赛道",
-      "org": "",
-      "tags": [
-        "AI"
-      ],
-      "city": "线上",
-      "online": true,
-      "venue": "",
-      "start": "2026-09-23",
-      "end": "2026-09-24",
-      "reg_deadline": "2026-09-24",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://m.saikr.com/vse/CLAIBM2026WN",
-      "source": "saikr"
-    },
-    {
-      "id": "hdx-cd9aa42d26",
-      "name": "四川文旅「百县千剧」x目音Musein黑客松 9月24日",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "成都",
-      "online": false,
-      "venue": "",
-      "start": "2026-09-24",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/4879783799900",
-      "source": "huodongxing"
-    },
-    {
       "id": "saikr-2431324067",
       "name": "【九月底可领证书】2026年第四届大学生信息系统创新大赛--办公软件知识巅峰赛",
       "org": "",
@@ -884,6 +827,25 @@
       "prize_text": "",
       "url": "https://www.huodongxing.com/event/5878649799600",
       "source": "huodongxing"
+    },
+    {
+      "id": "saikr-a7a61d1d70",
+      "name": "2026年第四届大学生信息系统创新大赛--JAVA编程巅峰赛",
+      "org": "",
+      "tags": [
+        "综合"
+      ],
+      "city": "线上",
+      "online": true,
+      "venue": "",
+      "start": "2026-10-10",
+      "end": "2026-10-11",
+      "reg_deadline": "2026-10-09",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://m.saikr.com/vse/Java202601",
+      "source": "saikr"
     },
     {
       "id": "saikr-a432dce1ce",
