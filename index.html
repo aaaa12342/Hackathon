@@ -66,7 +66,7 @@ body {
 
 /* 列表 */
 .list { display: flex; flex-direction: column; gap: 8px; }
-.row { display: flex; align-items: center; gap: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-card); padding: 12px 16px; }
+.row { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-card); padding: 12px 16px; }
 .row.dim { opacity: .55; }
 .date { flex-shrink: 0; width: 54px; text-align: center; }
 .date .m { font-size: 12px; line-height: 16px; color: var(--text-muted); }
@@ -85,9 +85,10 @@ body {
 .chip { font-size: 12px; line-height: 18px; color: var(--text-muted); background: var(--surface-muted); border-radius: var(--radius); padding: 0 8px; }
 .chip.onl { color: var(--brand-text); background: var(--brand-soft); }
 .right { flex-shrink: 0; display: flex; align-items: center; gap: 12px; }
-.prize { text-align: right; }
-.prize .p { font: 600 13px/18px var(--font-sans); font-variant-numeric: tabular-nums; }
-.prize .l { font-size: 12px; line-height: 16px; color: var(--text-muted); }
+.prize-btn { font: 500 12px/18px var(--font-sans); color: var(--text-muted); background: transparent; border: 1px solid var(--border); border-radius: var(--radius-full); padding: 5px 12px; cursor: pointer; flex-shrink: 0; }
+.prize-btn:hover { border-color: var(--brand); color: var(--brand); }
+.reward { display: none; flex-basis: 100%; margin-top: 2px; padding: 10px 12px; background: var(--surface-muted); border-radius: var(--radius); font-size: 13px; line-height: 20px; color: var(--text); }
+.row.prize-open .reward { display: block; }
 .go { font: 500 12px/18px var(--font-sans); color: var(--brand-on); background: var(--brand); border: none; border-radius: var(--radius-full); padding: 6px 14px; cursor: pointer; text-decoration: none; display: inline-block; }
 .go:hover { opacity: .88; }
 .empty { text-align: center; color: var(--text-muted); padding: 48px 0; }
@@ -97,7 +98,6 @@ body {
   .row { flex-wrap: wrap; }
   .date { width: 48px; }
   .right { width: 100%; justify-content: flex-end; }
-  .prize { margin-left: auto; }
 }
 </style>
 </head>
@@ -213,9 +213,11 @@ body {
         + chips
         + '</div></div>'
         + '<div class="right">'
-        + (prize ? '<div class="prize"><div class="p">' + prize + '</div><div class="l">奖励</div></div>' : '')
+        + (prize ? '<button class="prize-btn" type="button">奖品</button>' : '')
         + '<a class="go" href="' + e.url + '" target="_blank" rel="noopener">直达 ↗</a>'
-        + '</div></div>';
+        + '</div>'
+        + (prize ? '<div class="reward">' + prize + '</div>' : '')
+        + '</div>';
     });
     document.getElementById('list').innerHTML = html || '<div class="empty">没有符合条件的活动</div>';
     document.getElementById('count').textContent = list.length + ' 场活动' + (state.city ? ' · ' + state.city + '优先' : '');
@@ -249,6 +251,11 @@ body {
       state.city = this.value;
       try { localStorage.setItem('hkx-city', state.city); } catch (e) {}
       render();
+    });
+    document.getElementById('list').addEventListener('click', function (ev) {
+      var b = ev.target.closest('.prize-btn'); if (!b) return;
+      var row = b.closest('.row');
+      if (row) row.classList.toggle('prize-open');
     });
   }
 
