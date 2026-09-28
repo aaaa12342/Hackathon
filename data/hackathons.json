@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-27 12:31",
+  "updated_at": "2026-09-28 12:33",
   "counts": {
-    "total": 66,
-    "scraped": 62,
+    "total": 64,
+    "scraped": 60,
     "manual": 6
   },
   "errors": [],
@@ -273,25 +273,6 @@
       "prize": 0,
       "prize_text": "$10,000 奖金池 + 最有价值反馈奖；新平台早期塑造机会",
       "url": "https://call-e.devpost.com/",
-      "source": "ai-pick"
-    },
-    {
-      "id": "aipick-7f790c23a9",
-      "name": "Creative Minds Jam #1: Hong Kong — $10K创作者经济Agent大赛",
-      "org": "Animoca Brands",
-      "tags": [
-        "AI"
-      ],
-      "city": "全球",
-      "online": true,
-      "venue": "",
-      "start": "2026-08-04",
-      "end": "2026-08-28",
-      "reg_deadline": "2026-08-28",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "$10,000奖池 + Minds Investment Programme最高$250K投资机会。全球开放无资格门槛，线上虚拟参与。需用Minds (Anim",
-      "url": "https://dorahacks.io/hackathon/creativeminds/detail",
       "source": "ai-pick"
     },
     {
@@ -789,25 +770,6 @@
       "prize_text": "$100,000现金 + $100,000 OpenAI API tokens，总资源约$1.1M",
       "url": "https://hackalem.ai",
       "source": "ai-pick"
-    },
-    {
-      "id": "saikr-2431324067",
-      "name": "【九月底可领证书】2026年第四届大学生信息系统创新大赛--办公软件知识巅峰赛",
-      "org": "",
-      "tags": [
-        "综合"
-      ],
-      "city": "线上",
-      "online": true,
-      "venue": "",
-      "start": "2026-09-25",
-      "end": "2026-09-27",
-      "reg_deadline": "2026-09-27",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://m.saikr.com/vse/OFFICE202601",
-      "source": "saikr"
     },
     {
       "id": "hdx-76bc0e17f1",
