@@ -520,6 +520,62 @@ SOURCES = [
     ('rosedu', fetch_rosedu),
 ]
 
+# ---------------- 榜单赛事下一届时间抓取 ----------------
+# 榜单赛事多为「每年一届」：本届结束后，官网通知页会陆续发布下一届的
+# 报名/比赛时间。给条目配置 notice_url（官方通知页），脚本每次运行尝试
+# 从「下一届(当前年+1)」的通知文字里解析日期；命中则覆盖日期并清除
+# ended 标记（该条目自动从「已结束」转回「报名中/待开始」）。
+# 抓取失败或解析不到日期时保持静态值，不影响其他来源。
+
+_SEASON_DATE = re.compile(r'(\d{4})\s*年\s*(\d{1,2})\s*月\s*(\d{1,2})\s*日')
+
+
+def _parse_season(text, year):
+    """在已含 year 年份的纯文本里解析下一届日期，返回 {字段: 日期}，找不到返回 None。"""
+    res = {}
+    for m in _SEASON_DATE.finditer(text):
+        if int(m.group(1)) != year:
+            continue
+        d = '%04d-%02d-%02d' % (year, int(m.group(2)), int(m.group(3)))
+        ctx = text[max(0, m.start() - 40):m.end() + 40]
+        if ('截止' in ctx or '报名' in ctx) and 'reg_deadline' not in res:
+            res['reg_deadline'] = d
+        elif 'start' not in res and ('开始' in ctx or '开赛' in ctx or '举办' in ctx):
+            res['start'] = d
+    return res or None
+
+
+def fetch_ranked_updates(ranked):
+    """扫描配置了 notice_url 的榜单赛事，抓取下一届时间并覆盖日期。"""
+    next_year = TODAY.year + 1
+    out = []
+    for e in ranked:
+        url = (e.get('notice_url') or '').strip()
+        if not url:
+            out.append(e)
+            continue
+        try:
+            html = http_get(url)
+        except Exception:
+            out.append(e)
+            continue
+        text = re.sub(r'<[^>]+>', ' ', html)
+        text = re.sub(r'\s+', ' ', text)
+        if str(next_year) not in text:
+            out.append(e)
+            continue
+        hit = _parse_season(text, next_year)
+        if not hit:
+            out.append(e)
+            continue
+        e2 = dict(e)
+        e2.update(hit)
+        e2.pop('ended', None)  # 下一届已发布报名时间，解除「已结束」标记
+        print('  [ranked] %s -> %s' % (e2['name'][:20], hit))
+        out.append(e2)
+    return out
+
+
 # ---------------- 合并逻辑 ----------------
 def _norm_title(t):
     return re.sub(r'[\s·\-—|（）()【】\[\],，。.!！?？:：/\\"\'`]+', '', t).lower()
@@ -576,6 +632,8 @@ def main():
         print('[OK] ranked: %d 条' % len(ranked))
     else:
         print('[WARN] ranked.json 不存在，跳过')
+
+    ranked = fetch_ranked_updates(ranked)
 
     merged = merge(source_results, manual, ranked)
     result = {

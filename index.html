@@ -134,6 +134,7 @@ body {
   function today() { return new Date(); }
   function d(str) { return str ? new Date(str + 'T23:59:59+08:00') : null; }
   function status(e) {
+    if (e.ended) return 'done';
     var now = today(), s = d(e.start), en = d(e.end) || d(e.reg_deadline), ddl = d(e.reg_deadline);
     if (en && en < now) return 'done';
     if (s && s <= now && (!en || en >= now)) return 'ongoing';
@@ -227,7 +228,7 @@ body {
   function initControls(data) {
     var cities = {};
     data.events.forEach(function (e) { cities[e.city] = 1; });
-    var cats = ['全部', '竞赛', '展会', '黑客松', '会议'];
+    var cats = ['全部', '竞赛', '榜单赛事', '展会', '黑客松', '会议'];
     document.getElementById('tags').innerHTML = cats.map(function (t) {
       return '<button class="pill' + (t === state.cat ? ' on' : '') + '" data-cat="' + t + '">' + t + '</button>';
     }).join('');
