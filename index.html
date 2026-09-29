@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>中国黑客松日历</title>
+<title>科技活动日历</title>
 <style>
 :root {
   --surface: #ffffff;
@@ -105,7 +105,7 @@ body {
 <div class="wrap">
   <div class="head">
     <div>
-      <div class="title">中国黑客松日历</div>
+      <div class="title">科技活动日历</div>
       <div class="sub" id="count">加载中…</div>
     </div>
     <label class="city-pick">📍 我的城市
@@ -127,7 +127,7 @@ body {
 
 <script>
 (function () {
-  var state = { tag: '全部', city: '', sort: 'smart' };
+  var state = { cat: '全部', city: '', sort: 'smart' };
   var ALL = [];
 
   // ---- 状态计算 ----
@@ -154,7 +154,7 @@ body {
 
   // ---- 渲染 ----
   function visible() {
-    return ALL.filter(function (e) { return state.tag === '全部' || (e.tags || []).indexOf(state.tag) >= 0; });
+    return ALL.filter(function (e) { return state.cat === '全部' || e.category === state.cat; });
   }
   function sorted(list) {
     var arr = list.slice();
@@ -200,7 +200,7 @@ body {
       var ddlText = e.reg_deadline
         ? (st === 'done' ? '已结束' : (st === 'closing' ? '<span class="ddl-hot">报名截止 ' + e.reg_deadline + ' ⚠</span>' : '报名截止 ' + e.reg_deadline))
         : '';
-      var chips = (e.tags || []).map(function (t) { return '<span class="chip">' + t + '</span>'; }).join('');
+      var chips = (e.category ? '<span class="chip cat">' + e.category + '</span>' : '');
       if (e.online) chips += '<span class="chip onl">线上</span>';
       var prize = fmtPrize(e);
       html += '<div class="row' + (st === 'done' ? ' dim' : '') + '">'
@@ -225,13 +225,11 @@ body {
 
   // ---- 初始化控件 ----
   function initControls(data) {
-    var tags = {}, cities = {};
-    data.events.forEach(function (e) {
-      (e.tags || []).forEach(function (t) { tags[t] = 1; });
-      cities[e.city] = 1;
-    });
-    document.getElementById('tags').innerHTML = ['全部'].concat(Object.keys(tags)).map(function (t) {
-      return '<button class="pill' + (t === state.tag ? ' on' : '') + '" data-tag="' + t + '">' + t + '</button>';
+    var cities = {};
+    data.events.forEach(function (e) { cities[e.city] = 1; });
+    var cats = ['全部', '竞赛', '展会', '黑客松', '会议'];
+    document.getElementById('tags').innerHTML = cats.map(function (t) {
+      return '<button class="pill' + (t === state.cat ? ' on' : '') + '" data-cat="' + t + '">' + t + '</button>';
     }).join('');
     document.getElementById('city').innerHTML = '<option value="">全部</option>' + Object.keys(cities).sort().map(function (c) {
       return '<option value="' + c + '"' + (c === state.city ? ' selected' : '') + '>' + c + '</option>';
@@ -240,7 +238,7 @@ body {
     document.getElementById('tags').addEventListener('click', function (ev) {
       var b = ev.target.closest('.pill'); if (!b) return;
       this.querySelectorAll('.pill').forEach(function (p) { p.classList.remove('on'); });
-      b.classList.add('on'); state.tag = b.dataset.tag; render();
+      b.classList.add('on'); state.cat = b.dataset.cat; render();
     });
     document.getElementById('sort').addEventListener('click', function (ev) {
       var b = ev.target.closest('button'); if (!b) return;
