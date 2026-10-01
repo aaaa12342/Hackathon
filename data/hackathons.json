@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-30 12:48",
+  "updated_at": "2026-10-01 13:00",
   "counts": {
-    "total": 208,
-    "scraped": 186,
+    "total": 203,
+    "scraped": 180,
     "manual": 8,
     "ranked": 20
   },
@@ -183,23 +183,6 @@
       "source": "ai-pick"
     },
     {
-      "id": "sf-1160000047876533",
-      "name": "🚀 TRAE AI 创造力大赛正式开启！超百万现金等你来造",
-      "org": "",
-      "category": "竞赛",
-      "city": "线上",
-      "online": true,
-      "venue": "",
-      "start": "2026-06-18",
-      "end": "2026-08-31",
-      "reg_deadline": "2026-08-31",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://segmentfault.com/e/1160000047876533",
-      "source": "segmentfault"
-    },
-    {
       "id": "aipick-a0218e83a0",
       "name": "ARC Prize 2026 - $2M奖金池，Kaggle交互式推理基准",
       "org": "ARC Prize Foundation",
@@ -231,23 +214,6 @@
       "prize": 0,
       "prize_text": "$50,000奖金池",
       "url": "https://aws.amazon.com/about-aws/whats-new/2025/11/ai-league-2026-championship",
-      "source": "ai-pick"
-    },
-    {
-      "id": "aipick-a7ffa45810",
-      "name": "2026腾讯开悟人工智能全球公开赛(服创大赛D类) 6赛道",
-      "org": "腾讯",
-      "category": "竞赛",
-      "city": "中国",
-      "online": false,
-      "venue": "",
-      "start": "2026-06-21",
-      "end": "2026-08-31",
-      "reg_deadline": "2026-08-31",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "服创大赛国家级奖项+腾讯开悟平台资源+宇树科技合作赛道",
-      "url": "https://tencentarena.com/aiarena/zh/match/open-competition-2026",
       "source": "ai-pick"
     },
     {
@@ -316,23 +282,6 @@
       "prize": 0,
       "prize_text": "奖品未公开；用OpenAI Codex优化Mac Metal kernels提交到HF排行榜",
       "url": "https://huggingface.co/spaces/humanitys-last-hackathon/signup",
-      "source": "ai-pick"
-    },
-    {
-      "id": "aipick-9d753a49d7",
-      "name": "IBM AI Builders Challenge with IBM Bob — $15K prizes for university students",
-      "org": "IBM",
-      "category": "竞赛",
-      "city": "全球",
-      "online": true,
-      "venue": "",
-      "start": "2026-06-27",
-      "end": "2026-08-31",
-      "reg_deadline": "2026-08-31",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "$15K total prizes, two monthly rounds (July 1-31, Aug 1-31), IBM Bob tool",
-      "url": "https://aibuilderschallenge-bob.bemyapp.com/",
       "source": "ai-pick"
     },
     {
@@ -899,23 +848,6 @@
       "source": "ai-pick"
     },
     {
-      "id": "aipick-5fa12ad5f2",
-      "name": "2026天池AI大模型赛-电商物流赛道 — ¥10万奖金 8/31截止",
-      "org": "天池(阿里云)",
-      "category": "竞赛",
-      "city": "中国",
-      "online": false,
-      "venue": "",
-      "start": "2026-08-13",
-      "end": "2026-08-31",
-      "reg_deadline": "2026-08-31",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "奖金池¥100,000（E-commerce/Logistics 电商物流 AI 大模型赛题，LLM 应用方向）；2026.08.07 ~ 08.31，已70队",
-      "url": "https://tianchi.aliyun.com/competition/entrance/532509",
-      "source": "ai-pick"
-    },
-    {
       "id": "aipick-6b7b7f9be3",
       "name": "Alpaca AI Trading Agents Hackathon — $5K AI交易Agent",
       "org": "Alpaca + lablab.ai",
@@ -1203,57 +1135,6 @@
       "prize_text": "$77,000奖金",
       "url": "https://www.kaggle.com/competitions/rsna-knee-abnormality-detection",
       "source": "ai-pick"
-    },
-    {
-      "id": "hdx-d81abebb18",
-      "name": "官宣｜人工智能工商管理博士（DBA in AI）",
-      "org": "",
-      "category": "会议",
-      "city": "上海",
-      "online": false,
-      "venue": "",
-      "start": "2026-09-01",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/6874571042800",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-262b7ff5a0",
-      "name": "别再只会做技术！大数据人进阶管理层的捷径✨",
-      "org": "",
-      "category": "会议",
-      "city": "上海",
-      "online": false,
-      "venue": "",
-      "start": "2026-09-01",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/1875006849300",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-495559be38",
-      "name": "【2026 秋季班热招】ESCE 法国高等对外贸易学院 大数据 MBA/DBA：以数据筑底，以商思维破局，执掌数字时代管理权",
-      "org": "",
-      "category": "会议",
-      "city": "上海",
-      "online": false,
-      "venue": "",
-      "start": "2026-09-01",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/9874571665300",
-      "source": "huodongxing"
     },
     {
       "id": "manual-xagent-mcp-2026",
@@ -1715,6 +1596,23 @@
       "source": "huodongxing"
     },
     {
+      "id": "hdx-4925b9ec98",
+      "name": "“两周一链”——第9期大湾区机器人全产业链供需对接：聚焦多场景智能巡检，共筑机器人落地新生态！",
+      "org": "",
+      "category": "会议",
+      "city": "深圳",
+      "online": false,
+      "venue": "",
+      "start": "2026-10-10",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/3880820983911",
+      "source": "huodongxing"
+    },
+    {
       "id": "hdx-a4c2c28047",
       "name": "大数据治税时代 · 税收合规与税务稽查应对实战沙龙",
       "org": "",
@@ -1763,23 +1661,6 @@
       "prize": 0,
       "prize_text": "",
       "url": "https://www.huodongxing.com/event/7879469842211",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-6f8a89a6ec",
-      "name": "深圳市机器人商学院：招募讲师和城市合伙人",
-      "org": "",
-      "category": "会议",
-      "city": "深圳",
-      "online": false,
-      "venue": "",
-      "start": "2026-10-11",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/3878489613800",
       "source": "huodongxing"
     },
     {
@@ -1988,6 +1869,23 @@
       "source": "ai-pick"
     },
     {
+      "id": "hdx-76433a84e3",
+      "name": "进迭时空开发者大会 2026",
+      "org": "",
+      "category": "展会",
+      "city": "深圳",
+      "online": false,
+      "venue": "",
+      "start": "2026-10-17",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/7880793670900",
+      "source": "huodongxing"
+    },
+    {
       "id": "hdx-6b6a74b78f",
       "name": "AI+制造-具身智能机器人产业落地应用论坛",
       "org": "",
@@ -2023,7 +1921,7 @@
     },
     {
       "id": "saikr-f1d4a6cb14",
-      "name": "【10月首推竞赛】计算机网络赛道",
+      "name": "【90分以上即可领取4A级学会盖章一等奖证书】计算机网络赛道",
       "org": "",
       "category": "竞赛",
       "city": "线上",
@@ -2087,6 +1985,23 @@
       "prize": 0,
       "prize_text": "",
       "url": "https://m.saikr.com/vse/59954",
+      "source": "saikr"
+    },
+    {
+      "id": "saikr-086cf4576a",
+      "name": "2026年大学生统计科学与算法编程挑战赛——算法赛道",
+      "org": "",
+      "category": "竞赛",
+      "city": "线上",
+      "online": true,
+      "venue": "",
+      "start": "2026-10-18",
+      "end": "2026-10-18",
+      "reg_deadline": "2026-10-16",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://m.saikr.com/vse/2026TJKXSF",
       "source": "saikr"
     },
     {
@@ -2223,23 +2138,6 @@
       "prize": 0,
       "prize_text": "",
       "url": "https://www.huodongxing.com/event/9879506852300",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-24da0b782a",
-      "name": "【邀请函】2026智能机器人博览会+亚洲电子展",
-      "org": "",
-      "category": "展会",
-      "city": "深圳",
-      "online": false,
-      "venue": "",
-      "start": "2026-10-27",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/3877605283100",
       "source": "huodongxing"
     },
     {
@@ -2583,23 +2481,6 @@
       "source": "huodongxing"
     },
     {
-      "id": "hdx-15163d235c",
-      "name": "GAIC全球人工智能大会 · AI健康主题论坛",
-      "org": "",
-      "category": "展会",
-      "city": "杭州",
-      "online": false,
-      "venue": "",
-      "start": "2026-11-18",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/8875747617500",
-      "source": "huodongxing"
-    },
-    {
       "id": "hdx-1917d9c4a7",
       "name": "全球人工智能大会 · AI教育主题论坛",
       "org": "",
@@ -2614,6 +2495,23 @@
       "prize": 0,
       "prize_text": "",
       "url": "https://www.huodongxing.com/event/7875734351300",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-15163d235c",
+      "name": "GAIC全球人工智能大会 · AI健康主题论坛",
+      "org": "",
+      "category": "展会",
+      "city": "杭州",
+      "online": false,
+      "venue": "",
+      "start": "2026-11-18",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/8875747617500",
       "source": "huodongxing"
     },
     {
@@ -2665,6 +2563,23 @@
       "prize": 0,
       "prize_text": "",
       "url": "https://www.huodongxing.com/event/3876611215400",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-67d40baca3",
+      "name": "ACE科技创新大会",
+      "org": "",
+      "category": "展会",
+      "city": "北京",
+      "online": false,
+      "venue": "",
+      "start": "2026-11-20",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/1877064492200",
       "source": "huodongxing"
     },
     {
@@ -2720,7 +2635,7 @@
     },
     {
       "id": "hdx-d745c50081",
-      "name": "2026WAIAC世界人工智能应用大会暨亚洲人工智能机器展",
+      "name": "2026WAIAC世界人工智能应用大会",
       "org": "",
       "category": "展会",
       "city": "深圳",
@@ -2733,23 +2648,6 @@
       "prize": 0,
       "prize_text": "",
       "url": "https://www.huodongxing.com/event/4879198541300",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-4ead1e6f4f",
-      "name": "深圳企业家创新沙龙《科技成果转化的中国答案100个科技成果转化实战案例》科学家聚会",
-      "org": "",
-      "category": "会议",
-      "city": "深圳",
-      "online": false,
-      "venue": "",
-      "start": "2026-12-06",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/5861948402911",
       "source": "huodongxing"
     },
     {
@@ -2801,6 +2699,23 @@
       "prize": 0,
       "prize_text": "",
       "url": "https://www.huodongxing.com/event/6877887036000",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-f1f00f44c9",
+      "name": "第四届人工智能生成内容国际会议 (AIGC 2026)",
+      "org": "",
+      "category": "会议",
+      "city": "广州",
+      "online": false,
+      "venue": "",
+      "start": "2026-12-26",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/2880642408800",
       "source": "huodongxing"
     },
     {
