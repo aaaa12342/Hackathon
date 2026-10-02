@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-01 13:00",
+  "updated_at": "2026-10-02 12:51",
   "counts": {
-    "total": 203,
-    "scraped": 180,
+    "total": 201,
+    "scraped": 178,
     "manual": 8,
     "ranked": 20
   },
@@ -282,23 +282,6 @@
       "prize": 0,
       "prize_text": "奖品未公开；用OpenAI Codex优化Mac Metal kernels提交到HF排行榜",
       "url": "https://huggingface.co/spaces/humanitys-last-hackathon/signup",
-      "source": "ai-pick"
-    },
-    {
-      "id": "aipick-f3406db0d7",
-      "name": "DevNetwork [API + Cloud + AI] Hackathon 2026 — $40,500现金",
-      "org": "DevNetwork",
-      "category": "黑客松",
-      "city": "全球",
-      "online": true,
-      "venue": "",
-      "start": "2026-06-28",
-      "end": "2026-09-01",
-      "reg_deadline": "2026-09-02",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "$40,500现金：总冠军$12,500 + Perfect Corp $2,500 + Foxit/Apptio/Impart等$1K赛道；另有DevNetw",
-      "url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
       "source": "ai-pick"
     },
     {
@@ -593,23 +576,6 @@
       "source": "ai-pick"
     },
     {
-      "id": "aipick-df6e3a396c",
-      "name": "TikTok TechJam 2026 — $34.5K 全球72小时在线Hackathon",
-      "org": "TikTok",
-      "category": "黑客松",
-      "city": "全球",
-      "online": true,
-      "venue": "",
-      "start": "2026-08-05",
-      "end": "2026-09-01",
-      "reg_deadline": "2026-09-01",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "$34,500 现金奖池（约₹31.7L），分赛道设奖，具体分配见Devpost规则页",
-      "url": "https://tiktoktechjam2026.devpost.com/",
-      "source": "ai-pick"
-    },
-    {
       "id": "aipick-983c2991c2",
       "name": "CCL 2026 AI 大模型竞赛 — 天池赛道 ¥40K",
       "org": "CCL 2026",
@@ -726,23 +692,6 @@
       "prize": 0,
       "prize_text": "团结引擎奖¥30,000×2、抖音小游戏潜力奖¥10,000×3、高校新星奖¥5,000×10、专项奖¥3,000×10；另有百万文创资金扶持、孵化器入驻、投资",
       "url": "https://unity.cn/ucdc2026",
-      "source": "ai-pick"
-    },
-    {
-      "id": "aipick-200e64b752",
-      "name": "2026具身智能大赛 — 仿真资产合成/跨本体认知/具身安全 三赛道 ¥10万",
-      "org": "天池(阿里云)",
-      "category": "竞赛",
-      "city": "全球",
-      "online": true,
-      "venue": "",
-      "start": "2026-08-09",
-      "end": "2026-09-01",
-      "reg_deadline": "2026-09-01",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "¥10万奖金池；全球首例跨本体跨平台仿真+真机挑战赛，赛事将本体、算法、数据、仿真与安全评测置于同一闭环",
-      "url": "https://tianchi.aliyun.com/competition/entrance/532508",
       "source": "ai-pick"
     },
     {
@@ -2173,6 +2122,23 @@
       "prize_text": "",
       "url": "https://www.huodongxing.com/event/1864890931600",
       "source": "huodongxing"
+    },
+    {
+      "id": "aipick-fac104401d",
+      "name": "ClawHunt 上海黑客松",
+      "org": "WaytoAGI 社区",
+      "category": "黑客松",
+      "city": "中国",
+      "online": false,
+      "venue": "",
+      "start": "2026-10-30",
+      "end": "2026-11-01",
+      "reg_deadline": "2026-11-01",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://clawhunt.store/",
+      "source": "ai-pick"
     },
     {
       "id": "hdx-e31579e280",
