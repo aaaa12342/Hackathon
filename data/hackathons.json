@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02 12:51",
+  "updated_at": "2026-10-03 12:33",
   "counts": {
     "total": 201,
     "scraped": 178,
@@ -1494,23 +1494,6 @@
       "source": "huodongxing"
     },
     {
-      "id": "hdx-4e61be9d3b",
-      "name": "机器人足球科创公益课10月2日",
-      "org": "",
-      "category": "会议",
-      "city": "深圳",
-      "online": false,
-      "venue": "",
-      "start": "2026-10-02",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/7879948407500",
-      "source": "huodongxing"
-    },
-    {
       "id": "hdx-36978fab42",
       "name": "机器人足球科创公益课10月6日",
       "org": "",
@@ -1610,6 +1593,23 @@
       "prize": 0,
       "prize_text": "",
       "url": "https://www.huodongxing.com/event/7879469842211",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-6f8a89a6ec",
+      "name": "深圳市机器人商学院：招募讲师和城市合伙人",
+      "org": "",
+      "category": "会议",
+      "city": "深圳",
+      "online": false,
+      "venue": "",
+      "start": "2026-10-11",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/3878489613800",
       "source": "huodongxing"
     },
     {
@@ -2056,23 +2056,6 @@
       "source": "segmentfault"
     },
     {
-      "id": "hdx-84fd5b4bbc",
-      "name": "ROBOTECH 2026深圳智能机器人博览会",
-      "org": "",
-      "category": "展会",
-      "city": "深圳",
-      "online": false,
-      "venue": "",
-      "start": "2026-10-27",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/4879619386500",
-      "source": "huodongxing"
-    },
-    {
       "id": "hdx-87fc5452fd",
       "name": "2026深圳智能机器人博览会（ROBOTECH 2026）",
       "org": "",
@@ -2087,6 +2070,23 @@
       "prize": 0,
       "prize_text": "",
       "url": "https://www.huodongxing.com/event/9879506852300",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-84fd5b4bbc",
+      "name": "ROBOTECH 2026深圳智能机器人博览会",
+      "org": "",
+      "category": "展会",
+      "city": "深圳",
+      "online": false,
+      "venue": "",
+      "start": "2026-10-27",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/4879619386500",
       "source": "huodongxing"
     },
     {
